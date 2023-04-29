@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CD593DF0-FBF2-4EF3-AAD8-2888FB3E04D2}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{CD593DF0-FBF2-4EF3-AAD8-2888FB3E04D2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="General" ID="{F0791845-4AE5-4AE0-BA9A-94ECD8D72C46}" ShortID="148737185">
+					<ChildrenList>
+						<SoundBank Name="GameplayLoop" ID="{085358B1-3660-41EF-B558-AD9F2201FCCA}">
+							<ObjectInclusionList>
+								<ObjectRef Name="testSound1" ID="{278D6B1C-90C0-42A5-AD84-596D0B4ED623}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="testSound2" ID="{E88D6F34-F3D6-4422-B7C1-BC9B61B23D18}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="testLoop1" ID="{F490F7D0-37F0-46E5-81BA-6D9757444E85}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="testStopLoop1" ID="{5F84025D-7CF5-4DCE-81D0-2D322C825420}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

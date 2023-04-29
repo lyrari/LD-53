@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4F9F3F12-004A-4207-B631-FA7C8D994F50}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{4F9F3F12-004A-4207-B631-FA7C8D994F50}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Testing" ID="{CD7275E3-1A95-47FD-AF25-AAC1A885A8BA}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="testLoop1" ID="{F490F7D0-37F0-46E5-81BA-6D9757444E85}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="testSound1" ID="{278D6B1C-90C0-42A5-AD84-596D0B4ED623}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="testStopLoop1" ID="{5F84025D-7CF5-4DCE-81D0-2D322C825420}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="testSound2" ID="{E88D6F34-F3D6-4422-B7C1-BC9B61B23D18}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

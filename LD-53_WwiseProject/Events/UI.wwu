@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" SchemaVersion="110" RootDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" ParentDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}">
+	<Events>
+		<WorkUnit Name="UI" ID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="testSound1" ID="{278D6B1C-90C0-42A5-AD84-596D0B4ED623}">
+					<ChildrenList>
+						<Action Name="" ID="{64684EFE-BA6A-4228-9ED7-C74DDD85106B}" ShortID="1004235314">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testSound1" ID="{C3E6330D-3CF1-475B-8913-D0F69ED8280F}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="testSound2" ID="{E88D6F34-F3D6-4422-B7C1-BC9B61B23D18}">
+					<ChildrenList>
+						<Action Name="" ID="{18AC8D33-D899-4949-B3CE-C0565BB12CFC}" ShortID="292586773">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testSound2" ID="{28EA92D9-56EA-4890-B346-C89CA8162332}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="testLoop1" ID="{F490F7D0-37F0-46E5-81BA-6D9757444E85}">
+					<ChildrenList>
+						<Action Name="" ID="{8EBD4CE5-2DE0-4F50-8389-2488AC135CC0}" ShortID="221615459">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testLoop1" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="testStopLoop1" ID="{5F84025D-7CF5-4DCE-81D0-2D322C825420}">
+					<ChildrenList>
+						<Action Name="" ID="{C521FB3C-A636-4A0F-997B-C9E2EBBDB47C}" ShortID="818992953">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testLoop1" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

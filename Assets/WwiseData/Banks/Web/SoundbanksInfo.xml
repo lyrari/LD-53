@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Web" BasePlatform="Web" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../../../../LD-53_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../LD-53_WwiseProject/.cache/Web</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../LD-53_WwiseProject/GeneratedSoundBanks/Web</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1FA67FAD-38F4-3E9E-2732-FE3058E99440}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="77978275" Name="Ambient"/>
+				<Bus Id="838047381" Name="Non-World"/>
+				<Bus Id="1069431850" Name="Player"/>
+				<Bus Id="1551306167" Name="UI"/>
+				<Bus Id="1695690031" Name="Objects"/>
+				<Bus Id="2609808943" Name="World"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{9AD39D06-7002-3D30-A621-0D0CD039DAB7}">
+			<ShortName>GameplayLoop</ShortName>
+			<Path>GameplayLoop.bnk</Path>
+			<Media>
+				<File Id="201988726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameStart.wav</ShortName>
+					<CachePath>SFX/GameStart_10C4C929.wem</CachePath>
+				</File>
+				<File Id="879433341" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>towerUpgraded.wav</ShortName>
+					<CachePath>SFX/towerUpgraded_1A32E792.wem</CachePath>
+				</File>
+				<File Id="1067915172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Clock 070.wav</ShortName>
+					<CachePath>SFX/Clock 070_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2815352248" Name="testLoop1" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1067915172"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1573350443" Name="testSound1" DurationType="OneShot" DurationMin="1.7111835" DurationMax="1.7111835">
+					<MediaRefs>
+						<MediaRef Id="879433341"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1573350440" Name="testSound2" DurationType="OneShot" DurationMin="1.816" DurationMax="1.816">
+					<MediaRefs>
+						<MediaRef Id="201988726"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="932027168" Name="testStopLoop1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{97E00499-5D57-BCC9-45FB-D5E4D8163E4D}</FileHash>
+</SoundBanksInfo>

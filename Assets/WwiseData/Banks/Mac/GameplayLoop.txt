@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	932027168	testStopLoop1			\Default Work Unit\UI\testStopLoop1	
+	1573350440	testSound2			\Default Work Unit\UI\testSound2	
+	1573350443	testSound1			\Default Work Unit\UI\testSound1	
+	2815352248	testLoop1			\Default Work Unit\UI\testLoop1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	201988726	testSound2	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\GameStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSound2		348768
+	879433341	testSound1	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\towerUpgraded_1A32E792.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSound1		328644
+	1067915172	testLoop1	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\Clock 070_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testLoop1		1535840
+

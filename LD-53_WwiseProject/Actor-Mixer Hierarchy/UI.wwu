@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}" SchemaVersion="110" RootDocumentID="{E04C61CB-27AB-4051-8C1A-AE3737F6D08E}" ParentDocumentID="{E04C61CB-27AB-4051-8C1A-AE3737F6D08E}">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}" OwnerID="{512E4A76-5581-4033-A724-36E4FB41BFA2}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="UI" ID="{13F37B34-F18D-487B-8B79-CEE03A51982F}" ShortID="172848067">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Buttons" ID="{40D4A2B5-EDA6-4DE9-B9D5-C8C54BBA5B0C}" ShortID="265951149">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+						<Sound Name="testSound1" ID="{C3E6330D-3CF1-475B-8913-D0F69ED8280F}" ShortID="481434406">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="towerUpgraded" ID="{DBB9C2AA-F7FF-480F-AB3A-98509847F577}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.288816503800217"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>towerUpgraded.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="879433341"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="towerUpgraded" ID="{DBB9C2AA-F7FF-480F-AB3A-98509847F577}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="testLoop1" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" ShortID="330949357">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clock 070" ID="{5128B7EC-073C-4735-8125-4AFDF10E632F}">
+									<Language>SFX</Language>
+									<AudioFile>Clock 070.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1067915172"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clock 070" ID="{5128B7EC-073C-4735-8125-4AFDF10E632F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="testSound2" ID="{28EA92D9-56EA-4890-B346-C89CA8162332}" ShortID="724455291">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameStart" ID="{8EAB6C3C-7657-4AED-8A7F-249781D3D896}">
+									<Language>SFX</Language>
+									<AudioFile>GameStart.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="201988726"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GameStart" ID="{8EAB6C3C-7657-4AED-8A7F-249781D3D896}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

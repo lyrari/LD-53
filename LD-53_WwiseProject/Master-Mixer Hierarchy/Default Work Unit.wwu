@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}" SchemaVersion="110">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{798FC38E-BC60-4707-BCCC-DCCCC6533C91}" WorkUnitID="{5420DFC2-4392-4EE5-924F-44006972A960}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Non-World" ID="{98B96403-A669-4586-B000-5FC16DDB9320}">
+							<ChildrenList>
+								<Bus Name="UI" ID="{8491B947-34C1-4AA1-B99D-28B1A655A46F}"/>
+								<Bus Name="Music" ID="{8417CD1A-B6B8-4458-994E-EA36DF718318}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="World" ID="{FCB63A4D-C343-44DE-B5A2-52A8FBEE1996}">
+							<ChildrenList>
+								<Bus Name="Player" ID="{172E0C5F-1DE7-4B17-AD21-2500AE782450}"/>
+								<Bus Name="Objects" ID="{D933B99E-8CA2-4CAD-BD7C-B23E159DF8E2}"/>
+								<Bus Name="Ambient" ID="{6993CBA6-75A3-4268-BCBE-F84E2C585718}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

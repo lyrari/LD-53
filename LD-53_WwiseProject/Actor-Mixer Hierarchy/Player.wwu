@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}" SchemaVersion="110" RootDocumentID="{E04C61CB-27AB-4051-8C1A-AE3737F6D08E}" ParentDocumentID="{E04C61CB-27AB-4051-8C1A-AE3737F6D08E}">
+	<AudioObjects>
+		<WorkUnit Name="Player" ID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}" OwnerID="{62C22F78-7E1C-441F-902E-EAD4FCDBA8CD}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Player" ID="{5D7D2F17-53E4-48F8-8DD2-DF72A4FE2619}" ShortID="964837993">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

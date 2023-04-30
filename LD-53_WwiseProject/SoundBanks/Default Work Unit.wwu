@@ -7,10 +7,24 @@
 					<ChildrenList>
 						<SoundBank Name="GameplayLoop" ID="{085358B1-3660-41EF-B558-AD9F2201FCCA}">
 							<ObjectInclusionList>
+								<ObjectRef Name="mailDropoff" ID="{EB28E468-EFA3-4102-BF2F-A418DF759B60}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="demonNote" ID="{FD130950-21F8-411C-93C2-6D510F0A2904}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testSound1" ID="{278D6B1C-90C0-42A5-AD84-596D0B4ED623}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="deliverFail" ID="{CC67223A-A0CD-434C-AE0C-9D7361A4A11C}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="startGame" ID="{F1E6F49A-AE93-4387-B285-0BB350185B94}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testSound2" ID="{E88D6F34-F3D6-4422-B7C1-BC9B61B23D18}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
-								<ObjectRef Name="testLoop1" ID="{F490F7D0-37F0-46E5-81BA-6D9757444E85}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
-								<ObjectRef Name="testStopLoop1" ID="{5F84025D-7CF5-4DCE-81D0-2D322C825420}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="timeGone" ID="{A8FE1981-1C72-457A-ABD6-84320589CA51}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="musicStart" ID="{A1F0CFEA-5B8E-4636-B418-1E8FDB07DFA5}" WorkUnitID="{E1C5397B-968C-4157-AEBF-C351C49D2955}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="demonSighted" ID="{92F3D612-6C98-47F9-8CE1-A9332B90F9EB}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="mailPickup" ID="{03E49948-D72A-47FF-BC79-62792E65F4BC}" WorkUnitID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="demonScrawl" ID="{6FD9B53C-489C-4926-A389-688E4346EBDD}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="fakeDropoff" ID="{7ACBA36B-7B56-4972-A647-E478A0265568}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="lightSwitch" ID="{1C1E994E-07DE-4B4A-8BD6-30D2EC3F04D0}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="timeLow" ID="{9EE8A0C4-5E13-4BD3-9CFB-A99CEAC227E0}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="flashLight" ID="{4544D92D-9C2F-4CC7-A68C-875BDFCDFB13}" WorkUnitID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="deliverCorrect" ID="{CD32CEAC-B43E-4CCC-9854-67F891583136}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="buttonClick" ID="{F3A12F96-4D7B-4F05-9855-37D338FF305F}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="deliverEvil" ID="{38C1CDC9-68D7-4F30-A702-2E145EA2EE4B}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

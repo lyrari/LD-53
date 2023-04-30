@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" SchemaVersion="110" RootDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" ParentDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}">
 	<Events>
-		<WorkUnit Name="Player" ID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="mailPickup" ID="{03E49948-D72A-47FF-BC79-62792E65F4BC}">
+					<ChildrenList>
+						<Action Name="" ID="{0324C316-0E1A-4A2E-83D8-C182BA1AAC87}" ShortID="786287454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailPickup" ID="{68CAE5B5-9425-4941-9F2B-C6D31D5213D0}" WorkUnitID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="flashLight" ID="{4544D92D-9C2F-4CC7-A68C-875BDFCDFB13}">
+					<ChildrenList>
+						<Action Name="" ID="{4CF465C8-EC32-48E0-912D-6A0DA2CAF815}" ShortID="190225191">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="flashLight" ID="{07CF325E-BBB5-446D-B41E-2A80F2E0C01A}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

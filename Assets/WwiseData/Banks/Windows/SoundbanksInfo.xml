@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AAA891B9-B130-A52E-A63A-8831DB5C9A8B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F61AE4F5-6A91-412F-BB21-4AAF99252FA7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -28,28 +28,180 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="213224213" Name="spookyMeter"/>
+				<GameParameter Id="988953028" Name="SFXVolume"/>
+				<GameParameter Id="2346531308" Name="musicVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{9AD39D06-7002-3D30-A621-0D0CD039DAB7}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{A6D935DD-FA6D-E560-8244-2563813EDEF4}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="33454414" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-008.wav</ShortName>
+					<CachePath>SFX/paperMoves-008_10C4C929.wem</CachePath>
+				</File>
+				<File Id="55212877" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wall_Light_Double_Switch_Off-004.wav</ShortName>
+					<CachePath>SFX/Wall_Light_Double_Switch_Off-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="142444500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-006.wav</ShortName>
+					<CachePath>SFX/paperMoves-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="169170007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>light_switch_019.wav</ShortName>
+					<CachePath>SFX/light_switch_019_10C4C929.wem</CachePath>
+				</File>
+				<File Id="185056910" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient rain light washed out stereo MS.wav</ShortName>
+					<CachePath>SFX/ambient rain light washed out stereo MS_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="187707238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bluezone-BC0217-dark-ambience-047.wav</ShortName>
+					<CachePath>SFX/Bluezone-BC0217-dark-ambience-047_8EC66A03.wem</CachePath>
+				</File>
 				<File Id="201988726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameStart.wav</ShortName>
 					<CachePath>SFX/GameStart_10C4C929.wem</CachePath>
+				</File>
+				<File Id="263909832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-003.wav</ShortName>
+					<CachePath>SFX/paperMoves-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="281401068" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-004.wav</ShortName>
+					<CachePath>SFX/paperMoves-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="399424045" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-005.wav</ShortName>
+					<CachePath>SFX/paperMoves-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="473647315" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>demonNote.wav</ShortName>
+					<CachePath>SFX/demonNote_10C4C929.wem</CachePath>
+				</File>
+				<File Id="558181291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>deliverFailEvil.wav</ShortName>
+					<CachePath>SFX/deliverFailEvil_10C4C929.wem</CachePath>
+				</File>
+				<File Id="640616034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>buttonClick.wav</ShortName>
+					<CachePath>SFX/buttonClick_0BFD5657.wem</CachePath>
+				</File>
+				<File Id="758520131" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-001.wav</ShortName>
+					<CachePath>SFX/paperMoves-001_F3D1ECC3.wem</CachePath>
+				</File>
+				<File Id="836433334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-009.wav</ShortName>
+					<CachePath>SFX/paperMoves-009_10C4C929.wem</CachePath>
+				</File>
+				<File Id="868457136" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>deliverCorrectEvil.wav</ShortName>
+					<CachePath>SFX/deliverCorrectEvil_10C4C929.wem</CachePath>
 				</File>
 				<File Id="879433341" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>towerUpgraded.wav</ShortName>
 					<CachePath>SFX/towerUpgraded_1A32E792.wem</CachePath>
 				</File>
+				<File Id="892846570" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>demonSighted.wav</ShortName>
+					<CachePath>SFX/demonSighted_EF30165B.wem</CachePath>
+				</File>
+				<File Id="914220114" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>deliverCorrectNormal.wav</ShortName>
+					<CachePath>SFX/deliverCorrectNormal_10C4C929.wem</CachePath>
+				</File>
+				<File Id="924068350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paperMoves-002.wav</ShortName>
+					<CachePath>SFX/paperMoves-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1012681276" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailBurn.wav</ShortName>
+					<CachePath>SFX/mailBurn_2CD8726B.wem</CachePath>
+				</File>
+				<File Id="1027921463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>deliverFailNormal.wav</ShortName>
+					<CachePath>SFX/deliverFailNormal_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1044113872" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>startGame.wav</ShortName>
+					<CachePath>SFX/startGame_12668392.wem</CachePath>
+				</File>
 				<File Id="1067915172" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Clock 070.wav</ShortName>
-					<CachePath>SFX/Clock 070_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/Clock 070_C5579977.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2815352248" Name="testLoop1" DurationType="Infinite">
+				<Event Id="4051332235" Name="buttonClick" DurationType="OneShot" DurationMin="0.024479233" DurationMax="0.024479233">
 					<MediaRefs>
-						<MediaRef Id="1067915172"/>
+						<MediaRef Id="640616034"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="760461422" Name="deliverCorrect" DurationType="OneShot" DurationMin="2.3664792" DurationMax="2.3664792">
+					<MediaRefs>
+						<MediaRef Id="868457136"/>
+						<MediaRef Id="914220114"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2852856182" Name="deliverEvil" DurationType="OneShot" DurationMin="1.4641143" DurationMax="1.643413">
+					<MediaRefs>
+						<MediaRef Id="1012681276"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="309925616" Name="deliverFail" DurationType="OneShot" DurationMin="1.9152067" DurationMax="2.0885475">
+					<MediaRefs>
+						<MediaRef Id="558181291"/>
+						<MediaRef Id="1027921463"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1814714670" Name="demonNote" DurationType="OneShot" DurationMin="9.849979" DurationMax="9.849979">
+					<MediaRefs>
+						<MediaRef Id="473647315"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3826399214" Name="demonScrawl" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3073589598" Name="demonSighted" DurationType="OneShot" DurationMin="3.002004" DurationMax="3.002004">
+					<MediaRefs>
+						<MediaRef Id="892846570"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3334051056" Name="fakeDropoff" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1167979795" Name="flashLight" DurationType="OneShot" DurationMin="0.22194451" DurationMax="0.24203219">
+					<MediaRefs>
+						<MediaRef Id="169170007"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1504742439" Name="lightSwitch" DurationType="OneShot" DurationMin="0.34682697" DurationMax="0.37821746">
+					<MediaRefs>
+						<MediaRef Id="55212877"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2092165070" Name="mailDropoff" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3597251180" Name="mailPickup" DurationType="OneShot" DurationMin="0.40397817" DurationMax="1.3169789">
+					<MediaRefs>
+						<MediaRef Id="33454414"/>
+						<MediaRef Id="142444500"/>
+						<MediaRef Id="263909832"/>
+						<MediaRef Id="281401068"/>
+						<MediaRef Id="399424045"/>
+						<MediaRef Id="758520131"/>
+						<MediaRef Id="836433334"/>
+						<MediaRef Id="924068350"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="185056910"/>
+						<MediaRef Id="187707238"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1521187885" Name="startGame" DurationType="OneShot" DurationMin="6.669709" DurationMax="6.669709">
+					<MediaRefs>
+						<MediaRef Id="1044113872"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1573350443" Name="testSound1" DurationType="OneShot" DurationMin="1.7111835" DurationMax="1.7111835">
@@ -62,9 +214,17 @@
 						<MediaRef Id="201988726"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="932027168" Name="testStopLoop1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1685525603" Name="timeGone" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3875630812" Name="timeLow" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1067915172"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="213224213" Name="spookyMeter"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E4C8590D-DA8A-5EF0-5482-7FD2E68F8F4B}</FileHash>
+	<FileHash>{88F3D174-B58D-349B-A4B1-1EF813B2FA84}</FileHash>
 </SoundBanksInfo>

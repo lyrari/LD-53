@@ -14,6 +14,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<WorkUnit Name="UI" ID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}" PersistMode="Reference"/>
+						<WorkUnit Name="Ambient" ID="{6A15519B-5125-489D-AB2D-736264D8B917}" PersistMode="Reference"/>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="World" ID="{62C22F78-7E1C-441F-902E-EAD4FCDBA8CD}" ShortID="413766135">

@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E1C5397B-968C-4157-AEBF-C351C49D2955}" SchemaVersion="110" RootDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" ParentDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}">
 	<Events>
-		<WorkUnit Name="Music" ID="{E1C5397B-968C-4157-AEBF-C351C49D2955}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested"/>
+		<WorkUnit Name="Music" ID="{E1C5397B-968C-4157-AEBF-C351C49D2955}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="musicStart" ID="{A1F0CFEA-5B8E-4636-B418-1E8FDB07DFA5}">
+					<ChildrenList>
+						<Action Name="" ID="{BE2D080F-0812-4742-A856-A09553C25EBB}" ShortID="37923373">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientBlendRain" ID="{575B286B-A1FB-442D-8005-E08F72BDDE93}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8A035E61-8225-4FD2-B5AD-1DAAB82D8713}" ShortID="34443778">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="spookyMeter" ID="{19A5ED21-12FA-474A-8AE0-38FDB994F9E7}" WorkUnitID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{62E47221-DE3A-466F-ADED-5E2EEA678CFC}" ShortID="983049873">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientBlendRain" ID="{575B286B-A1FB-442D-8005-E08F72BDDE93}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

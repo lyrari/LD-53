@@ -16,7 +16,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="mailPickup" ID="{68CAE5B5-9425-4941-9F2B-C6D31D5213D0}" ShortID="308964404">
+						<RandomSequenceContainer Name="mailMove" ID="{68CAE5B5-9425-4941-9F2B-C6D31D5213D0}" ShortID="308964404">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -463,6 +463,328 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
+						<RandomSequenceContainer Name="footStep" ID="{D1D25487-D703-4E22-B898-800F0A5A9DE4}" ShortID="316948266">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B19C7266-6C9D-4D0F-8EF2-51D80860000F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wood Footstep-001" ID="{41540FA7-17A1-4219-AA63-272D626C9ED7}" ShortID="634790287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-001" ID="{0057751A-F467-48D3-AD76-F23DF5909BA1}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="202687941"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-001" ID="{0057751A-F467-48D3-AD76-F23DF5909BA1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-002" ID="{9609B90A-E430-40C5-BCCA-9703CC05E901}" ShortID="47168638">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-002" ID="{A7FD5C18-1133-488C-B66B-19BB811056EB}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1028183235"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-002" ID="{A7FD5C18-1133-488C-B66B-19BB811056EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-003" ID="{ECA3EAAB-E151-47A9-9C76-B37B56C7F1D3}" ShortID="349376683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-003" ID="{D636C1CD-CD4F-4B32-99B6-EFA7FF79465E}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="533200720"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-003" ID="{D636C1CD-CD4F-4B32-99B6-EFA7FF79465E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-004" ID="{A4176F8A-27B4-47FF-9A47-82BFAE2B5F8A}" ShortID="654239663">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-004" ID="{AB115C1E-BCDC-4186-A8A8-769F0CEE0BEF}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="272646990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-004" ID="{AB115C1E-BCDC-4186-A8A8-769F0CEE0BEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-005" ID="{4D159D4E-C203-444E-B6F9-C1C04C159D0F}" ShortID="812073345">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-005" ID="{7D0BF41B-9AE1-4CCC-9AE8-761AFC576AE2}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="89063372"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-005" ID="{7D0BF41B-9AE1-4CCC-9AE8-761AFC576AE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-006" ID="{795EFA1A-22C6-46C6-A8E8-E94574A31CA4}" ShortID="829013146">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-006" ID="{0DA0C6BF-F7F9-4A72-AE4E-2640A78816D1}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="459715231"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-006" ID="{0DA0C6BF-F7F9-4A72-AE4E-2640A78816D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-007" ID="{4EFCCACC-4FC2-4FF2-A88B-66CF3B25E6E5}" ShortID="1051008459">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-007" ID="{5E114084-16A8-45C9-8F4A-B44E31557B0B}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="72783061"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-007" ID="{5E114084-16A8-45C9-8F4A-B44E31557B0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Footstep-008" ID="{CBB78876-16DF-4DA1-8424-6A7B6FA48BF2}" ShortID="835636677">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Footstep-008" ID="{7F007A15-295F-4C7F-9031-35D51A4E7462}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Footstep-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="940913837"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Footstep-008" ID="{7F007A15-295F-4C7F-9031-35D51A4E7462}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="mailPickup" ID="{B6BF24E2-710B-4A2A-8D0F-9B455D182C2D}" ShortID="229992985">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B66E404B-3FC0-4EF1-BCED-C0B7C468F38F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="pickup-001" ID="{9D300FB4-E9FC-4B3C-8E4B-19C56E5352BE}" ShortID="560450741">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pickup-001" ID="{77FFCE14-6350-4E8A-81BE-21D29A2B0730}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.074"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.433"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pickup-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="705163550"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pickup-001" ID="{77FFCE14-6350-4E8A-81BE-21D29A2B0730}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pickup-002" ID="{475E6681-2AD7-4B3E-B0EE-6676818EECE9}" ShortID="771161660">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pickup-002" ID="{2F9D2386-DC77-496D-BA01-6575CE57B6AF}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.059"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.559"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pickup-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="272037990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pickup-002" ID="{2F9D2386-DC77-496D-BA01-6575CE57B6AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pickup-003" ID="{0507EDFD-5E85-4EA0-BD2D-E2A16AB7763F}" ShortID="547863605">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pickup-003" ID="{D264326B-D521-469E-89E3-796D5665E3DD}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.095"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.496"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pickup-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="233493379"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pickup-003" ID="{D264326B-D521-469E-89E3-796D5665E3DD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -3,28 +3,6 @@
 	<Events>
 		<WorkUnit Name="UI" ID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="testSound1" ID="{278D6B1C-90C0-42A5-AD84-596D0B4ED623}">
-					<ChildrenList>
-						<Action Name="" ID="{64684EFE-BA6A-4228-9ED7-C74DDD85106B}" ShortID="1004235314">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="testSound1" ID="{C3E6330D-3CF1-475B-8913-D0F69ED8280F}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="testSound2" ID="{E88D6F34-F3D6-4422-B7C1-BC9B61B23D18}">
-					<ChildrenList>
-						<Action Name="" ID="{18AC8D33-D899-4949-B3CE-C0565BB12CFC}" ShortID="292586773">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="testSound2" ID="{28EA92D9-56EA-4890-B346-C89CA8162332}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="buttonClick" ID="{F3A12F96-4D7B-4F05-9855-37D338FF305F}">
 					<ChildrenList>
 						<Action Name="" ID="{6123C794-A11D-4DB2-A68B-708DC91FD6D6}" ShortID="653389556">

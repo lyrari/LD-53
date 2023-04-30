@@ -19,7 +19,7 @@
 						<Action Name="" ID="{89E3412F-2BCB-499B-A3D8-AC7B94847DBD}" ShortID="55854368">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="mailBurn" ID="{AFEE2919-FD1A-41E7-B56E-BC427EF141B8}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+									<ObjectRef Name="mailBurn" ID="{AFEE2919-FD1A-41E7-B56E-BC427EF141B8}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,6 +53,80 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="demonScrawl" ID="{6C4B9CB4-128E-493C-A3F3-3F3349D50308}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="lightFlicker" ID="{8121F2F3-D25F-408D-B6F9-6274220269B7}">
+					<ChildrenList>
+						<Action Name="" ID="{4DF00672-1A0A-4DBE-AD26-E679E7FB9A7B}" ShortID="1053054416">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lightFlicker" ID="{BB013923-F3D1-4FF7-9DC8-D63FF1B4E15C}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="mailFooled" ID="{9CD00DCF-9307-4A5F-A73B-DD7247B4FD62}">
+					<ChildrenList>
+						<Action Name="" ID="{8AE5392F-D39D-4F0E-9FC5-4DACA510C1E8}" ShortID="273111800">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailFooled" ID="{6F7C143B-6208-4A75-B7F4-1CDC97848AE5}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="mailFaked" ID="{A25A7514-0D63-4176-BE9A-1C19943F7240}">
+					<ChildrenList>
+						<Action Name="" ID="{8DF27DFA-50DF-479E-B5C8-362885597977}" ShortID="295738582">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailFaked" ID="{AF1109F5-73FF-49F4-AB43-D9E76F68DCAA}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="mailReady" ID="{431FE6AA-13D7-471D-8F8E-02E3BA467228}">
+					<ChildrenList>
+						<Action Name="" ID="{BB940F66-2FD8-4FB5-B188-0A860FEFD499}" ShortID="1008068057">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailReady" ID="{0076BE07-2168-41EA-B07D-C0FA58402688}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="evilAltar" ID="{6EB43803-BD5B-4999-A3A5-E25C05D0FB96}">
+					<ChildrenList>
+						<Action Name="" ID="{8A0E2DAB-7A9C-4192-9573-DBBE4E47C10B}" ShortID="323545220">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="evilAltar" ID="{569A287D-5E1D-4C68-AA40-301BEE831E71}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="reduceAltar" ID="{88C263AA-5A2E-42A6-91D1-C5EC9B48BE7D}">
+					<ChildrenList>
+						<Action Name="" ID="{CFD13005-9C50-4D5F-86C5-35B58AF423A6}" ShortID="695229908">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="10"/>
+								<Property Name="Volume" Type="Real64" Value="-12"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="evilAltar" ID="{569A287D-5E1D-4C68-AA40-301BEE831E71}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

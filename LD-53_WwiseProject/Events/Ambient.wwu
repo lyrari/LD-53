@@ -3,14 +3,12 @@
 	<Events>
 		<WorkUnit Name="Ambient" ID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="mailDropoff" ID="{EB28E468-EFA3-4102-BF2F-A418DF759B60}"/>
-				<Event Name="fakeDropoff" ID="{7ACBA36B-7B56-4972-A647-E478A0265568}"/>
 				<Event Name="timeLow" ID="{9EE8A0C4-5E13-4BD3-9CFB-A99CEAC227E0}">
 					<ChildrenList>
 						<Action Name="" ID="{0EE08686-95B0-4C90-9D4E-A92254E528D4}" ShortID="904714337">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="timeTicking" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+									<ObjectRef Name="timeTicking" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -24,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="timeTicking" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+									<ObjectRef Name="timeTicking" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

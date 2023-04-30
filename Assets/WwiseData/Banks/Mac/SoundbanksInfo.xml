@@ -34,21 +34,45 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{A6D935DD-FA6D-E560-8244-2563813EDEF4}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{AC880E68-958B-7CE3-7336-3B7B7C08C540}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="31150306" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>corruptShrine1.wav</ShortName>
+					<CachePath>SFX/corruptShrine1_B70DA641.wem</CachePath>
+				</File>
 				<File Id="33454414" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-008.wav</ShortName>
 					<CachePath>SFX/paperMoves-008_10C4C929.wem</CachePath>
+				</File>
+				<File Id="46811238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lightFlicker3.wav</ShortName>
+					<CachePath>SFX/lightFlicker3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="55212877" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wall_Light_Double_Switch_Off-004.wav</ShortName>
 					<CachePath>SFX/Wall_Light_Double_Switch_Off-004_10C4C929.wem</CachePath>
 				</File>
+				<File Id="66560071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-003.wav</ShortName>
+					<CachePath>SFX/mailFooled-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="72783061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-007.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="89063372" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-005.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-005_10C4C929.wem</CachePath>
+				</File>
 				<File Id="142444500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-006.wav</ShortName>
 					<CachePath>SFX/paperMoves-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="148378697" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>demonNoteBreathy.wav</ShortName>
+					<CachePath>SFX/demonNoteBreathy_10C4C929.wem</CachePath>
 				</File>
 				<File Id="169170007" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>light_switch_019.wav</ShortName>
@@ -62,25 +86,73 @@
 					<ShortName>Bluezone-BC0217-dark-ambience-047.wav</ShortName>
 					<CachePath>SFX/Bluezone-BC0217-dark-ambience-047_8EC66A03.wem</CachePath>
 				</File>
-				<File Id="201988726" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GameStart.wav</ShortName>
-					<CachePath>SFX/GameStart_10C4C929.wem</CachePath>
+				<File Id="189399481" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-002.wav</ShortName>
+					<CachePath>SFX/mailFooled-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="198426973" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-006.wav</ShortName>
+					<CachePath>SFX/mailFooled-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="202687941" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-001.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="226414009" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-005.wav</ShortName>
+					<CachePath>SFX/mailFooled-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="233493379" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pickup-003.wav</ShortName>
+					<CachePath>SFX/pickup-003_8C940BB6.wem</CachePath>
 				</File>
 				<File Id="263909832" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-003.wav</ShortName>
 					<CachePath>SFX/paperMoves-003_10C4C929.wem</CachePath>
 				</File>
+				<File Id="272037990" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pickup-002.wav</ShortName>
+					<CachePath>SFX/pickup-002_A837FB8B.wem</CachePath>
+				</File>
+				<File Id="272646990" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-004.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-004_10C4C929.wem</CachePath>
+				</File>
 				<File Id="281401068" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-004.wav</ShortName>
 					<CachePath>SFX/paperMoves-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="319078991" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>demonScrawl.wav</ShortName>
+					<CachePath>SFX/demonScrawl_10C4C929.wem</CachePath>
+				</File>
+				<File Id="327347345" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-001.wav</ShortName>
+					<CachePath>SFX/mailFooled-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="340276700" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lightFlicker2.wav</ShortName>
+					<CachePath>SFX/lightFlicker2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="351885238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-012.wav</ShortName>
+					<CachePath>SFX/mailFooled-012_10C4C929.wem</CachePath>
 				</File>
 				<File Id="399424045" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-005.wav</ShortName>
 					<CachePath>SFX/paperMoves-005_10C4C929.wem</CachePath>
 				</File>
-				<File Id="473647315" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>demonNote.wav</ShortName>
-					<CachePath>SFX/demonNote_10C4C929.wem</CachePath>
+				<File Id="447718734" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-007.wav</ShortName>
+					<CachePath>SFX/mailFooled-007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="459715231" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-006.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="533200720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-003.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-003_10C4C929.wem</CachePath>
 				</File>
 				<File Id="558181291" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverFailEvil.wav</ShortName>
@@ -90,25 +162,61 @@
 					<ShortName>buttonClick.wav</ShortName>
 					<CachePath>SFX/buttonClick_0BFD5657.wem</CachePath>
 				</File>
+				<File Id="690803210" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailReady.wav</ShortName>
+					<CachePath>SFX/mailReady_AB8892FE.wem</CachePath>
+				</File>
+				<File Id="705163550" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pickup-001.wav</ShortName>
+					<CachePath>SFX/pickup-001_CDA05B8A.wem</CachePath>
+				</File>
+				<File Id="758430832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFaked-002.wav</ShortName>
+					<CachePath>SFX/mailFaked-002_BB816E64.wem</CachePath>
+				</File>
 				<File Id="758520131" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-001.wav</ShortName>
 					<CachePath>SFX/paperMoves-001_F3D1ECC3.wem</CachePath>
+				</File>
+				<File Id="759771869" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-009.wav</ShortName>
+					<CachePath>SFX/mailFooled-009_10C4C929.wem</CachePath>
+				</File>
+				<File Id="760852722" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFaked-001.wav</ShortName>
+					<CachePath>SFX/mailFaked-001_7EE289A7.wem</CachePath>
+				</File>
+				<File Id="783070878" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-014.wav</ShortName>
+					<CachePath>SFX/mailFooled-014_10C4C929.wem</CachePath>
+				</File>
+				<File Id="788993450" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-010.wav</ShortName>
+					<CachePath>SFX/mailFooled-010_10C4C929.wem</CachePath>
+				</File>
+				<File Id="813834585" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFaked-003.wav</ShortName>
+					<CachePath>SFX/mailFaked-003_ADBAE8D3.wem</CachePath>
 				</File>
 				<File Id="836433334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>paperMoves-009.wav</ShortName>
 					<CachePath>SFX/paperMoves-009_10C4C929.wem</CachePath>
 				</File>
+				<File Id="848554182" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-013.wav</ShortName>
+					<CachePath>SFX/mailFooled-013_10C4C929.wem</CachePath>
+				</File>
 				<File Id="868457136" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverCorrectEvil.wav</ShortName>
 					<CachePath>SFX/deliverCorrectEvil_10C4C929.wem</CachePath>
 				</File>
-				<File Id="879433341" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>towerUpgraded.wav</ShortName>
-					<CachePath>SFX/towerUpgraded_1A32E792.wem</CachePath>
-				</File>
 				<File Id="892846570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>demonSighted.wav</ShortName>
 					<CachePath>SFX/demonSighted_EF30165B.wem</CachePath>
+				</File>
+				<File Id="898266274" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-015.wav</ShortName>
+					<CachePath>SFX/mailFooled-015_10C4C929.wem</CachePath>
 				</File>
 				<File Id="914220114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverCorrectNormal.wav</ShortName>
@@ -118,6 +226,18 @@
 					<ShortName>paperMoves-002.wav</ShortName>
 					<CachePath>SFX/paperMoves-002_10C4C929.wem</CachePath>
 				</File>
+				<File Id="940913837" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-008.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-008_10C4C929.wem</CachePath>
+				</File>
+				<File Id="947042403" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-011.wav</ShortName>
+					<CachePath>SFX/mailFooled-011_10C4C929.wem</CachePath>
+				</File>
+				<File Id="999103658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailFooled-004.wav</ShortName>
+					<CachePath>SFX/mailFooled-004_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1012681276" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailBurn.wav</ShortName>
 					<CachePath>SFX/mailBurn_2CD8726B.wem</CachePath>
@@ -125,6 +245,14 @@
 				<File Id="1027921463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverFailNormal.wav</ShortName>
 					<CachePath>SFX/deliverFailNormal_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1028183235" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood Footstep-002.wav</ShortName>
+					<CachePath>SFX/Wood Footstep-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1040506767" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lightFlicker.wav</ShortName>
+					<CachePath>SFX/lightFlicker_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1044113872" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
@@ -147,7 +275,7 @@
 						<MediaRef Id="914220114"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2852856182" Name="deliverEvil" DurationType="OneShot" DurationMin="1.4641143" DurationMax="1.643413">
+				<Event Id="2852856182" Name="deliverEvil" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.4641143" DurationMax="1.643413">
 					<MediaRefs>
 						<MediaRef Id="1012681276"/>
 					</MediaRefs>
@@ -158,30 +286,81 @@
 						<MediaRef Id="1027921463"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1814714670" Name="demonNote" DurationType="OneShot" DurationMin="9.849979" DurationMax="9.849979">
+				<Event Id="1814714670" Name="demonNote" DurationType="OneShot" DurationMin="8.860458" DurationMax="8.860458">
 					<MediaRefs>
-						<MediaRef Id="473647315"/>
+						<MediaRef Id="148378697"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3826399214" Name="demonScrawl" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3826399214" Name="demonScrawl" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.1355152" DurationMax="2.3287957">
+					<MediaRefs>
+						<MediaRef Id="319078991"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3073589598" Name="demonSighted" DurationType="OneShot" DurationMin="3.002004" DurationMax="3.002004">
 					<MediaRefs>
 						<MediaRef Id="892846570"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3334051056" Name="fakeDropoff" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3422208525" Name="evilAltar" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="31150306"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1167979795" Name="flashLight" DurationType="OneShot" DurationMin="0.22194451" DurationMax="0.24203219">
 					<MediaRefs>
 						<MediaRef Id="169170007"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1504742439" Name="lightSwitch" DurationType="OneShot" DurationMin="0.34682697" DurationMax="0.37821746">
+				<Event Id="3989513603" Name="footStepping" DurationType="OneShot" DurationMin="0.3571361" DurationMax="0.38945964">
+					<MediaRefs>
+						<MediaRef Id="72783061"/>
+						<MediaRef Id="89063372"/>
+						<MediaRef Id="202687941"/>
+						<MediaRef Id="272646990"/>
+						<MediaRef Id="459715231"/>
+						<MediaRef Id="533200720"/>
+						<MediaRef Id="940913837"/>
+						<MediaRef Id="1028183235"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3407736689" Name="lightFlicker" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.3414028" DurationMax="1.4628099">
+					<MediaRefs>
+						<MediaRef Id="46811238"/>
+						<MediaRef Id="340276700"/>
+						<MediaRef Id="1040506767"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1504742439" Name="lightSwitch" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.34682697" DurationMax="0.37821746">
 					<MediaRefs>
 						<MediaRef Id="55212877"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2092165070" Name="mailDropoff" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3597251180" Name="mailPickup" DurationType="OneShot" DurationMin="0.40397817" DurationMax="1.3169789">
+				<Event Id="3600692597" Name="mailFaked" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.9430639" DurationMax="2.0627217">
+					<MediaRefs>
+						<MediaRef Id="758430832"/>
+						<MediaRef Id="760852722"/>
+						<MediaRef Id="813834585"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3142306311" Name="mailFooled" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.96604687" DurationMax="2.1492474">
+					<MediaRefs>
+						<MediaRef Id="66560071"/>
+						<MediaRef Id="189399481"/>
+						<MediaRef Id="198426973"/>
+						<MediaRef Id="226414009"/>
+						<MediaRef Id="327347345"/>
+						<MediaRef Id="351885238"/>
+						<MediaRef Id="447718734"/>
+						<MediaRef Id="759771869"/>
+						<MediaRef Id="783070878"/>
+						<MediaRef Id="788993450"/>
+						<MediaRef Id="848554182"/>
+						<MediaRef Id="898266274"/>
+						<MediaRef Id="947042403"/>
+						<MediaRef Id="999103658"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3946275511" Name="mailMove" DurationType="OneShot" DurationMin="0.40397817" DurationMax="1.3169789">
 					<MediaRefs>
 						<MediaRef Id="33454414"/>
 						<MediaRef Id="142444500"/>
@@ -193,29 +372,32 @@
 						<MediaRef Id="924068350"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3597251180" Name="mailPickup" DurationType="OneShot" DurationMin="0.41464224" DurationMax="0.58374906">
+					<MediaRefs>
+						<MediaRef Id="233493379"/>
+						<MediaRef Id="272037990"/>
+						<MediaRef Id="705163550"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="575186853" Name="mailReady" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.0083222" DurationMax="2.0083222">
+					<MediaRefs>
+						<MediaRef Id="690803210"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="185056910"/>
 						<MediaRef Id="187707238"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="704335073" Name="reduceAltar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1521187885" Name="startGame" DurationType="OneShot" DurationMin="6.669709" DurationMax="6.669709">
 					<MediaRefs>
 						<MediaRef Id="1044113872"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1573350443" Name="testSound1" DurationType="OneShot" DurationMin="1.7111835" DurationMax="1.7111835">
-					<MediaRefs>
-						<MediaRef Id="879433341"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1573350440" Name="testSound2" DurationType="OneShot" DurationMin="1.816" DurationMax="1.816">
-					<MediaRefs>
-						<MediaRef Id="201988726"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1685525603" Name="timeGone" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3875630812" Name="timeLow" DurationType="Infinite">
+				<Event Id="3875630812" Name="timeLow" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1067915172"/>
 					</MediaRefs>
@@ -226,5 +408,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2E182D89-043F-9D54-AF83-693457905350}</FileHash>
+	<FileHash>{FAEC6F77-9808-F0AD-8DA9-9462E7789D12}</FileHash>
 </SoundBanksInfo>

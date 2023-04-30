@@ -6,14 +6,6 @@
 				<SoundcasterSession Name="Testing" ID="{CD7275E3-1A95-47FD-AF25-AAC1A885A8BA}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="testSound1" ID="{278D6B1C-90C0-42A5-AD84-596D0B4ED623}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="testSound2" ID="{E88D6F34-F3D6-4422-B7C1-BC9B61B23D18}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="demonNote" ID="{FD130950-21F8-411C-93C2-6D510F0A2904}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}"/>
 							<Position X="2" Y="3"/>
 						</Module>
@@ -24,6 +16,14 @@
 						<Module>
 							<ObjectRef Name="startGame" ID="{F1E6F49A-AE93-4387-B285-0BB350185B94}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="evilAltar" ID="{6EB43803-BD5B-4999-A3A5-E25C05D0FB96}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="reduceAltar" ID="{88C263AA-5A2E-42A6-91D1-C5EC9B48BE7D}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}"/>
+							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

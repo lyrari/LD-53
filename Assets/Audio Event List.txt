@@ -1,0 +1,22 @@
+demonNote (finding occult note)
+demonSighted (demon visible)
+timeGone (stops ticking)
+timeLow (infinite ticking loop from clock, spatialized)
+musicStart (at game start, tied to "spookyMeter" RTPC)
+deliverCorrect
+deliverEvil (correct delivery to evil altar, spatialized fire sound)
+deliverFail
+demonScrawl (evil text, spatialized)
+evilAltar (when hell altar spawns, spatialized)
+lightFlicker (flicker, spatialized)
+lightSwitch (hit switch, spatialized)
+mailFaked (demon rings mail bell, spatialized)
+mailFooled (retrieve after being faked, spatialized)
+mailReady (unfaked mail pickup ready, spatialized)
+reduceAltar (quiet the altar after a duration of time active)
+flashLight
+footStepping
+mailMove (rustling/handling mail)
+mailPickup (pickup bag from ready counter)
+buttonClick
+startGame (menu start button if needed)

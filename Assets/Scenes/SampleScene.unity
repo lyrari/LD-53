@@ -5033,7 +5033,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f379f3ce2f5a87743beeba743ec12540, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9fc3cafd4c265ef4aa35b97774419aee, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

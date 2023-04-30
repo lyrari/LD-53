@@ -4,12 +4,15 @@
 		<WorkUnit Name="UI" ID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}" OwnerID="{512E4A76-5581-4033-A724-36E4FB41BFA2}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="UI" ID="{13F37B34-F18D-487B-8B79-CEE03A51982F}" ShortID="172848067">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+							<ObjectRef Name="UI" ID="{8491B947-34C1-4AA1-B99D-28B1A655A46F}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -19,9 +22,65 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+									<ObjectRef Name="UI" ID="{8491B947-34C1-4AA1-B99D-28B1A655A46F}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="buttonClick" ID="{F66C3FA2-F00D-471F-95C3-4723931114A6}" ShortID="146130077">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="buttonClick" ID="{9A91A124-1980-4ECA-A90C-60361A94FBD2}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0752509762158324"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.0997302094426696"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>buttonClick.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="640616034"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="buttonClick" ID="{9A91A124-1980-4ECA-A90C-60361A94FBD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="startGame" ID="{7AABE968-0A5E-4CE2-8968-7BA620B4C39F}" ShortID="655807306">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="startGame" ID="{3BA88E82-1C8E-4700-BBBF-FDFB72B80547}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0465465653529281"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.66970939829606"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>startGame.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1044113872"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="startGame" ID="{3BA88E82-1C8E-4700-BBBF-FDFB72B80547}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</ActorMixer>
 						<Sound Name="testSound1" ID="{C3E6330D-3CF1-475B-8913-D0F69ED8280F}" ShortID="481434406">
 							<PropertyList>
@@ -54,36 +113,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="towerUpgraded" ID="{DBB9C2AA-F7FF-480F-AB3A-98509847F577}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="testLoop1" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" ShortID="330949357">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-13</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clock 070" ID="{5128B7EC-073C-4735-8125-4AFDF10E632F}">
-									<Language>SFX</Language>
-									<AudioFile>Clock 070.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1067915172"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clock 070" ID="{5128B7EC-073C-4735-8125-4AFDF10E632F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="testSound2" ID="{28EA92D9-56EA-4890-B346-C89CA8162332}" ShortID="724455291">

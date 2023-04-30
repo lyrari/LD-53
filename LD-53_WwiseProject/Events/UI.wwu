@@ -25,26 +25,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="testLoop1" ID="{F490F7D0-37F0-46E5-81BA-6D9757444E85}">
+				<Event Name="buttonClick" ID="{F3A12F96-4D7B-4F05-9855-37D338FF305F}">
 					<ChildrenList>
-						<Action Name="" ID="{8EBD4CE5-2DE0-4F50-8389-2488AC135CC0}" ShortID="221615459">
+						<Action Name="" ID="{6123C794-A11D-4DB2-A68B-708DC91FD6D6}" ShortID="653389556">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="testLoop1" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+									<ObjectRef Name="buttonClick" ID="{F66C3FA2-F00D-471F-95C3-4723931114A6}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="testStopLoop1" ID="{5F84025D-7CF5-4DCE-81D0-2D322C825420}">
+				<Event Name="startGame" ID="{F1E6F49A-AE93-4387-B285-0BB350185B94}">
 					<ChildrenList>
-						<Action Name="" ID="{C521FB3C-A636-4A0F-997B-C9E2EBBDB47C}" ShortID="818992953">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{D6222E68-4BD8-403B-892A-8AE19EB65D7F}" ShortID="951712695">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="testLoop1" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+									<ObjectRef Name="startGame" ID="{7AABE968-0A5E-4CE2-8968-7BA620B4C39F}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

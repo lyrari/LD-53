@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{058FE07A-0312-4177-9682-6182DEE5532B}" SchemaVersion="110" RootDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" ParentDocumentID="{20BEE886-6922-4539-9075-3FE9F4641CBE}">
 	<Events>
-		<WorkUnit Name="Objects" ID="{058FE07A-0312-4177-9682-6182DEE5532B}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested"/>
+		<WorkUnit Name="Objects" ID="{058FE07A-0312-4177-9682-6182DEE5532B}" OwnerID="{20BEE886-6922-4539-9075-3FE9F4641CBE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="deliverCorrect" ID="{CD32CEAC-B43E-4CCC-9854-67F891583136}">
+					<ChildrenList>
+						<Action Name="" ID="{1BB9952C-E3E1-493F-9504-43DC7B2321A9}" ShortID="777963661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailDeliverSuccess" ID="{61D8CEC4-BB59-41C5-B420-CCDB62A6020E}" WorkUnitID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="deliverEvil" ID="{38C1CDC9-68D7-4F30-A702-2E145EA2EE4B}">
+					<ChildrenList>
+						<Action Name="" ID="{89E3412F-2BCB-499B-A3D8-AC7B94847DBD}" ShortID="55854368">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailBurn" ID="{AFEE2919-FD1A-41E7-B56E-BC427EF141B8}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="deliverFail" ID="{CC67223A-A0CD-434C-AE0C-9D7361A4A11C}">
+					<ChildrenList>
+						<Action Name="" ID="{8F0F5149-4DDE-444C-813F-F3945EC2364D}" ShortID="176276632">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailDeliverFail" ID="{6FCDAE4A-9C04-4689-AE6E-9E46C75BDBC8}" WorkUnitID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="lightSwitch" ID="{1C1E994E-07DE-4B4A-8BD6-30D2EC3F04D0}">
+					<ChildrenList>
+						<Action Name="" ID="{ABF834C0-D53C-4865-9B55-C2EA450C850A}" ShortID="592880163">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lightSwitch" ID="{0B86C2F0-2065-4662-B2D2-E95295ACCC27}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="demonScrawl" ID="{6FD9B53C-489C-4926-A389-688E4346EBDD}">
+					<ChildrenList>
+						<Action Name="" ID="{A4D10942-918E-422D-8EA1-B616563BE703}" ShortID="341849070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="demonScrawl" ID="{6C4B9CB4-128E-493C-A3F3-3F3349D50308}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

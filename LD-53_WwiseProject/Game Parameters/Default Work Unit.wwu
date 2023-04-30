@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="spookyMeter" ID="{19A5ED21-12FA-474A-8AE0-38FDB994F9E7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="musicVolume" ID="{A6EF02A2-7C18-4E66-9FD2-7B7A3A70639D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="80"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFXVolume" ID="{944F4969-901C-4A93-A056-AC5C66CDC140}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="80"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

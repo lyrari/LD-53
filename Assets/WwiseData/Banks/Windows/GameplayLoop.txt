@@ -1,11 +1,49 @@
 Event	ID	Name			Wwise Object Path	Notes
-	932027168	testStopLoop1			\Default Work Unit\UI\testStopLoop1	
+	309925616	deliverFail			\Default Work Unit\Objects\deliverFail	
+	760461422	deliverCorrect			\Default Work Unit\Objects\deliverCorrect	
+	1122283870	musicStart			\Default Work Unit\Music\musicStart	
+	1167979795	flashLight			\Default Work Unit\Player\flashLight	
+	1504742439	lightSwitch			\Default Work Unit\Objects\lightSwitch	
+	1521187885	startGame			\Default Work Unit\UI\startGame	
 	1573350440	testSound2			\Default Work Unit\UI\testSound2	
 	1573350443	testSound1			\Default Work Unit\UI\testSound1	
-	2815352248	testLoop1			\Default Work Unit\UI\testLoop1	
+	1685525603	timeGone			\Default Work Unit\Ambient\timeGone	
+	1814714670	demonNote			\Default Work Unit\Ambient\demonNote	
+	2092165070	mailDropoff			\Default Work Unit\Ambient\mailDropoff	
+	2852856182	deliverEvil			\Default Work Unit\Objects\deliverEvil	
+	3073589598	demonSighted			\Default Work Unit\Ambient\demonSighted	
+	3334051056	fakeDropoff			\Default Work Unit\Ambient\fakeDropoff	
+	3597251180	mailPickup			\Default Work Unit\Player\mailPickup	
+	3826399214	demonScrawl			\Default Work Unit\Objects\demonScrawl	
+	3875630812	timeLow			\Default Work Unit\Ambient\timeLow	
+	4051332235	buttonClick			\Default Work Unit\UI\buttonClick	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	213224213	spookyMeter			\Default Work Unit\spookyMeter	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	33454414	paperMoves-008	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-008_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-008		124160
+	55212877	Wall_Light_Double_Switch_Off-004	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Wall_Light_Double_Switch_Off-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\lightSwitch\Wall_Light_Double_Switch_Off-004		35024
+	142444500	paperMoves-006	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-006		126520
+	169170007	light_switch_019	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\light_switch_019_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\flashLight\light_switch_019		44660
+	185056910	ambient rain light washed out stereo MS	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\ambient rain light washed out stereo MS_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Ambient\Ambient\ambientBlendRain\ambient rain light washed out stereo MS		9101920
+	187707238	Bluezone-BC0217-dark-ambience-047	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Bluezone-BC0217-dark-ambience-047_8EC66A03.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Ambient\Ambient\ambientBlendRain\Bluezone-BC0217-dark-ambience-047		6189588
 	201988726	testSound2	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\GameStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSound2		348768
+	263909832	paperMoves-003	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-003		82272
+	281401068	paperMoves-004	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-004		180720
+	399424045	paperMoves-005	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-005		117792
+	473647315	demonNote	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\demonNote_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Ambient\Ambient\demonNote		1891292
+	558181291	deliverFailEvil	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\deliverFailEvil_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverFail\deliverFailEvil		384096
+	640616034	buttonClick	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\buttonClick_0BFD5657.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Buttons\buttonClick		4412
+	758520131	paperMoves-001	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-001_F3D1ECC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-001		207344
+	836433334	paperMoves-009	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-009_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-009		238764
+	868457136	deliverCorrectEvil	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\deliverCorrectEvil_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverSuccess\deliverCorrectEvil		454460
 	879433341	testSound1	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\towerUpgraded_1A32E792.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSound1		328644
-	1067915172	testLoop1	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Clock 070_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testLoop1		1535840
+	892846570	demonSighted	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\demonSighted_EF30165B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Ambient\Ambient\demonSighted		576480
+	914220114	deliverCorrectNormal	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\deliverCorrectNormal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverSuccess\deliverCorrectNormal		454460
+	924068350	paperMoves-002	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailPickup\paperMoves-002		112112
+	1012681276	mailBurn	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\mailBurn_2CD8726B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Ambient\Ambient\mailBurn		297920
+	1027921463	deliverFailNormal	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\deliverFailNormal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverFail\deliverFailNormal		232832
+	1044113872	startGame	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\startGame_12668392.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Buttons\startGame		1280680
+	1067915172	timeTicking	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Clock 070_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\Ambient\Ambient\timeTicking		1535840
 

@@ -2291,8 +2291,8 @@ Transform:
   - {fileID: 2088213115}
   - {fileID: 132987286}
   - {fileID: 47883539}
-  - {fileID: 31314166}
   - {fileID: 2134473765}
+  - {fileID: 31314166}
   - {fileID: 1223002086}
   m_Father: {fileID: 681329747}
   m_RootOrder: 1
@@ -4449,7 +4449,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f379f3ce2f5a87743beeba743ec12540, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9fc3cafd4c265ef4aa35b97774419aee, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -9941,5 +9941,5 @@ Transform:
   - {fileID: 214776156}
   - {fileID: 1928480139}
   m_Father: {fileID: 818811640}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

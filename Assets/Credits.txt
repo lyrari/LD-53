@@ -7,5 +7,7 @@ Wall - A Dog's Life Software https://assetstore.unity.com/packages/2d/textures-m
 Paper - jbp4444 https://opengameart.org/content/construction-paper-backgrounds
 Clock - VIS Games https://assetstore.unity.com/packages/3d/props/interior/clock-4250
 Bell - Deployer https://assetstore.unity.com/packages/3d/props/interior/christmas-toys-106607
+Fire - Unity Technologies https://assetstore.unity.com/packages/vfx/particles/particle-pack-127325
+Font - Storytype Studio https://www.dafont.com/richard-samuels.font
 
 

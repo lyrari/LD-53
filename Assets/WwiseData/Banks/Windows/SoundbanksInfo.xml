@@ -34,7 +34,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{AC880E68-958B-7CE3-7336-3B7B7C08C540}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{214FAB54-E013-F7A1-BB15-22819EEC8C20}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -408,5 +408,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BAB27A58-4FD1-5E4B-A88F-604101F78135}</FileHash>
+	<FileHash>{D109941D-81E4-C173-431D-19AAC46CE386}</FileHash>
 </SoundBanksInfo>

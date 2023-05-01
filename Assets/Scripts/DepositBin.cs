@@ -18,6 +18,23 @@ public class DepositBin : MonoBehaviour
 
     public bool DepositInBin(GrabbableObject objectToPutIn)
     {
-        return objectToPutIn.MyCorrectBin == MyBinType;
+        bool successfulDeposit = objectToPutIn.MyCorrectBin == MyBinType;
+
+        if (successfulDeposit)
+        {
+            
+            if (MyBinType == BinType.Hell)
+            {
+                // Play hell sound instead of success sound
+            } else
+            {
+                // Play standard success sound
+            }
+        } else
+        {
+            // Play failure sound
+        }
+
+        return successfulDeposit;
     }
 }

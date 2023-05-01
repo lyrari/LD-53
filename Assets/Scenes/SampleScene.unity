@@ -6302,7 +6302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 963194227}
   playerBody: {fileID: 948612402}
-  m_ClampYDegrees: 60
+  m_ClampYDegrees: 75
   m_MouseSensitivity: 500
   DefaultFOV: 60
   ZoomedFOV: 30
@@ -10300,6 +10300,8 @@ MonoBehaviour:
 
     R-click: Zoom
 
+    F: Flashlight
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d03eb29ac432c1b439d87de0460c5dab, type: 2}
@@ -10327,12 +10329,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 29.7
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 28
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256

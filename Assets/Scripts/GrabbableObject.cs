@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class GrabbableObject : MonoBehaviour
 {
+    public ScoreTracker tracker;
     bool grabbed;
     Rigidbody rb;
 
     public DepositBin.BinType MyCorrectBin;
 
     public float HellTimer = 20f;
-    float timeUntilDestruction;
+    public float timeUntilDestruction;
+    public bool TutorialLetter;
 
     // Any other info about the object should go here - like mail stats, destination
 
@@ -21,7 +23,7 @@ public class GrabbableObject : MonoBehaviour
 
     private void Start()
     {
-        if (MyCorrectBin == DepositBin.BinType.Hell)
+        if (MyCorrectBin == DepositBin.BinType.Hell && !TutorialLetter)
         {
             timeUntilDestruction = Time.time + HellTimer;
         } else
@@ -35,6 +37,7 @@ public class GrabbableObject : MonoBehaviour
         if (Time.time > timeUntilDestruction)
         {
             AkSoundEngine.PostEvent("deliverFail", this.gameObject);
+            tracker.failures++;
             Destroy(this.gameObject);
         }
     }

@@ -21,7 +21,7 @@ public class DemonLetterSpawner : MonoBehaviour
         nextSpawnTime = float.MaxValue;
     }
 
-    void SetNextDemonSpawn()
+    public void SetNextDemonSpawn()
     {
         nextSpawnTime = Time.time + demonSpawnDelay + Random.Range(0, demonSpawnVariance) - m_SpookyMeter.value / 3;
     }

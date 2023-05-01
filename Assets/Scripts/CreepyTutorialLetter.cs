@@ -16,8 +16,12 @@ public class CreepyTutorialLetter : MonoBehaviour
     public MailPickup MailPickupRef;
     public GameManager GameManagerRef; // Spook init
     public LightManager LightManagerRef; // PrepSpookyMeter
+    public DemonLetterSpawner DemonLetterSpawnerRef;
 
-
+    private void Start()
+    {
+        GetComponent<GrabbableObject>().timeUntilDestruction = float.MaxValue;
+    }
 
 
     // On letter pickup:
@@ -45,6 +49,7 @@ public class CreepyTutorialLetter : MonoBehaviour
         GameManagerRef.initSpookyMeter();
         m_ScoreTracker.failures = 0;
         LightManagerRef.PrepSpookyMeter();
+        DemonLetterSpawnerRef.SetNextDemonSpawn();
 
         // TODO: Enable demon letters
         StartCoroutine(fadeBackIn());

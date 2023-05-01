@@ -205,7 +205,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a14ff3d82f22d42a393fd49ffa5ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tracker: {fileID: 11400000, guid: 78ab20be40119cb41ae50a63f1b0f787, type: 2}
   MyCorrectBin: 4
+  HellTimer: 20
+  timeUntilDestruction: 0
+  TutorialLetter: 1
 --- !u!114 &4116330903907951446
 MonoBehaviour:
   m_ObjectHideFlags: 0

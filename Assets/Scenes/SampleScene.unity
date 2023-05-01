@@ -6982,6 +6982,7 @@ MonoBehaviour:
   MailPickupRef: {fileID: 1223002087}
   GameManagerRef: {fileID: 1860915885}
   LightManagerRef: {fileID: 1212677553}
+  DemonLetterSpawnerRef: {fileID: 1860915886}
 --- !u!1 &948612398
 GameObject:
   m_ObjectHideFlags: 0

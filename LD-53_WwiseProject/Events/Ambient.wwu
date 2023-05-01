@@ -28,23 +28,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="demonSighted" ID="{92F3D612-6C98-47F9-8CE1-A9332B90F9EB}">
-					<ChildrenList>
-						<Action Name="" ID="{A8C27C58-9962-451F-9BD2-B4047F265870}" ShortID="563835645">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="demonSighted" ID="{8A1DF8F9-C508-4589-9C2B-2C92F67A93F5}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="demonNote" ID="{FD130950-21F8-411C-93C2-6D510F0A2904}">
 					<ChildrenList>
 						<Action Name="" ID="{358B2A5E-8BDA-4A0C-8CD4-83169A0297E9}" ShortID="974267191">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="demonNote" ID="{704F3D27-8BD9-48A8-8184-CD5CE9BC427A}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+									<ObjectRef Name="demonNote" ID="{704F3D27-8BD9-48A8-8184-CD5CE9BC427A}" WorkUnitID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="demonSighted" ID="{6982B42B-A540-49F5-B036-07E40C3EEECB}">
+					<ChildrenList>
+						<Action Name="" ID="{9EE32283-1E8F-493E-8E91-284F623B331D}" ShortID="876377649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="demonSighted" ID="{8A1DF8F9-C508-4589-9C2B-2C92F67A93F5}" WorkUnitID="{AD1A8CDF-529B-4DAC-ADF7-FFA7D6891A74}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

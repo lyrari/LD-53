@@ -34,7 +34,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{183A1686-E969-9406-4558-9672CAA9DCC8}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E78B2FDB-1BEB-5F49-A1AA-33A6C9402E1B}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -54,10 +54,6 @@
 					<ShortName>Wall_Light_Double_Switch_Off-004.wav</ShortName>
 					<CachePath>SFX/Wall_Light_Double_Switch_Off-004_10C4C929.wem</CachePath>
 				</File>
-				<File Id="61753590" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>roundLoss.wav</ShortName>
-					<CachePath>SFX/roundLoss_10C4C929.wem</CachePath>
-				</File>
 				<File Id="66560071" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailFooled-003.wav</ShortName>
 					<CachePath>SFX/mailFooled-003_10C4C929.wem</CachePath>
@@ -76,7 +72,7 @@
 				</File>
 				<File Id="148378697" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>demonNoteBreathy.wav</ShortName>
-					<CachePath>SFX/demonNoteBreathy_10C4C929.wem</CachePath>
+					<CachePath>SFX/demonNoteBreathy_A3270D44.wem</CachePath>
 				</File>
 				<File Id="169170007" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>light_switch_019.wav</ShortName>
@@ -154,10 +150,6 @@
 					<ShortName>Wood Footstep-006.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-006_10C4C929.wem</CachePath>
 				</File>
-				<File Id="523120054" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>towerUpgraded.wav</ShortName>
-					<CachePath>SFX/towerUpgraded_10C4C929.wem</CachePath>
-				</File>
 				<File Id="533200720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-003.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-003_10C4C929.wem</CachePath>
@@ -170,9 +162,17 @@
 					<ShortName>deliverFailEvil.wav</ShortName>
 					<CachePath>SFX/deliverFailEvil_10C4C929.wem</CachePath>
 				</File>
+				<File Id="632133677" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gameWin.wav</ShortName>
+					<CachePath>SFX/gameWin_623664D9.wem</CachePath>
+				</File>
 				<File Id="640616034" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
 					<CachePath>SFX/buttonClick_0BFD5657.wem</CachePath>
+				</File>
+				<File Id="671612217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>death oneshot.wav</ShortName>
+					<CachePath>SFX/death oneshot_DEC10D16.wem</CachePath>
 				</File>
 				<File Id="690803210" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailReady.wav</ShortName>
@@ -224,7 +224,7 @@
 				</File>
 				<File Id="892846570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>demonSighted.wav</ShortName>
-					<CachePath>SFX/demonSighted_EF30165B.wem</CachePath>
+					<CachePath>SFX/demonSighted_4FF38ADB.wem</CachePath>
 				</File>
 				<File Id="898266274" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailFooled-015.wav</ShortName>
@@ -308,7 +308,7 @@
 						<MediaRef Id="319078991"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3073589598" Name="demonSighted" DurationType="OneShot" DurationMin="3.002004" DurationMax="3.002004">
+				<Event Id="3073589598" Name="demonSighted" DurationType="OneShot" DurationMin="2.6040921" DurationMax="2.6040921">
 					<MediaRefs>
 						<MediaRef Id="892846570"/>
 					</MediaRefs>
@@ -354,14 +354,14 @@
 						<MediaRef Id="1028183235"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2707952142" Name="gameLoss" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+				<Event Id="2707952142" Name="gameLoss" DurationType="OneShot" DurationMin="7" DurationMax="7">
 					<MediaRefs>
-						<MediaRef Id="61753590"/>
+						<MediaRef Id="671612217"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1776280627" Name="gameWin" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1776280627" Name="gameWin" DurationType="OneShot" DurationMin="5" DurationMax="5">
 					<MediaRefs>
-						<MediaRef Id="523120054"/>
+						<MediaRef Id="632133677"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3407736689" Name="lightFlicker" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.3414028" DurationMax="1.4628099">
@@ -449,5 +449,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FF6A3042-FAFC-44EE-1E23-F3A4BA80F716}</FileHash>
+	<FileHash>{31B7CBA7-6180-4BFD-73C3-44F5127DD51A}</FileHash>
 </SoundBanksInfo>

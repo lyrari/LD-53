@@ -850,6 +850,74 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="demonNote" ID="{704F3D27-8BD9-48A8-8184-CD5CE9BC427A}" ShortID="974546810">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Player" ID="{172E0C5F-1DE7-4B17-AD21-2500AE782450}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="demonNote" ID="{A93D5628-6A6D-4853-8981-9394A4B99A84}">
+									<Language>SFX</Language>
+									<AudioFile>demonNote.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="473647315"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="demonNoteBreathy" ID="{963918BF-C14A-440E-95CA-7A89EE85396D}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.359763389404486"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>demonNoteBreathy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="148378697"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="demonNoteBreathy" ID="{963918BF-C14A-440E-95CA-7A89EE85396D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="demonSighted" ID="{8A1DF8F9-C508-4589-9C2B-2C92F67A93F5}" ShortID="1040648725">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9EE8125-372C-4983-AB0D-0692D4F3E92E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8417CD1A-B6B8-4458-994E-EA36DF718318}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="demonSighted" ID="{27B78F04-D919-4B5C-9756-C1DB4D5AFB1C}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.255800464037123"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.60409217506939"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>demonSighted.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="892846570"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="demonSighted" ID="{27B78F04-D919-4B5C-9756-C1DB4D5AFB1C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

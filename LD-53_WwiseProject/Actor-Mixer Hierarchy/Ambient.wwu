@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Ambient" ID="{6A15519B-5125-489D-AB2D-736264D8B917}" OwnerID="{512E4A76-5581-4033-A724-36E4FB41BFA2}" PersistMode="Nested">
 			<ChildrenList>
-				<ActorMixer Name="Ambient" ID="{D6E7FF19-21D8-4B97-8BED-3A9C2C36607B}" ShortID="31719196">
+				<ActorMixer Name="ambientMusic" ID="{D6E7FF19-21D8-4B97-8BED-3A9C2C36607B}" ShortID="31719196">
 					<PropertyList>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
 					</PropertyList>
@@ -12,7 +12,7 @@
 							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Ambient" ID="{6993CBA6-75A3-4268-BCBE-F84E2C585718}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+							<ObjectRef Name="Music" ID="{8417CD1A-B6B8-4458-994E-EA36DF718318}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -175,68 +175,6 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<Sound Name="demonNote" ID="{704F3D27-8BD9-48A8-8184-CD5CE9BC427A}" ShortID="974546810">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="demonNote" ID="{A93D5628-6A6D-4853-8981-9394A4B99A84}">
-									<Language>SFX</Language>
-									<AudioFile>demonNote.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="473647315"/>
-									</MediaIDList>
-								</AudioFileSource>
-								<AudioFileSource Name="demonNoteBreathy" ID="{963918BF-C14A-440E-95CA-7A89EE85396D}">
-									<Language>SFX</Language>
-									<AudioFile>demonNoteBreathy.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="148378697"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="demonNoteBreathy" ID="{963918BF-C14A-440E-95CA-7A89EE85396D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="demonSighted" ID="{8A1DF8F9-C508-4589-9C2B-2C92F67A93F5}" ShortID="1040648725">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="demonSighted" ID="{27B78F04-D919-4B5C-9756-C1DB4D5AFB1C}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="3.00200400801603"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>demonSighted.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="892846570"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="demonSighted" ID="{27B78F04-D919-4B5C-9756-C1DB4D5AFB1C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

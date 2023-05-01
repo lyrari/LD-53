@@ -54,12 +54,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="startGame" ID="{7AABE968-0A5E-4CE2-8968-7BA620B4C39F}" ShortID="655807306">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+											<ObjectRef Name="Music" ID="{8417CD1A-B6B8-4458-994E-EA36DF718318}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -84,12 +87,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Game Conditions" ID="{CD127C0C-2866-4852-8645-2B01591FE548}" ShortID="433470962">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+									<ObjectRef Name="Music" ID="{8417CD1A-B6B8-4458-994E-EA36DF718318}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -103,19 +109,32 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="towerUpgraded" ID="{20FE8608-A73F-4F7D-B7D1-0386E3061CD1}">
+										<AudioFileSource Name="gameWin" ID="{4426E86B-58C2-49BF-B433-FB724068007F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.248839907192575"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.399651972157772"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>towerUpgraded.wav</AudioFile>
+											<AudioFile>gameWin.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="523120054"/>
+												<MediaID ID="632133677"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="towerUpgraded" ID="{20FE8608-A73F-4F7D-B7D1-0386E3061CD1}" Platform="Linked"/>
+										<ActiveSource Name="gameWin" ID="{4426E86B-58C2-49BF-B433-FB724068007F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="gameLoss" ID="{015300CB-DC4A-4980-951C-0D35582A14C0}" ShortID="420188737">
+								<Sound Name="gameLoss" ID="{CBE974C0-F2D4-4333-9C23-7CE0EFED61E3}" ShortID="782788204">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -125,16 +144,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="roundLoss" ID="{E22AACF6-F88B-4A40-AAAB-9AE05C2D8DD3}">
+										<AudioFileSource Name="death oneshot" ID="{2E0754CD-2C50-4BC9-9D6A-AE062FE75AE6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.442331707625045"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.991895344371313"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.5"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.5"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>roundLoss.wav</AudioFile>
+											<AudioFile>death oneshot.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="61753590"/>
+												<MediaID ID="671612217"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="roundLoss" ID="{E22AACF6-F88B-4A40-AAAB-9AE05C2D8DD3}" Platform="Linked"/>
+										<ActiveSource Name="death oneshot" ID="{2E0754CD-2C50-4BC9-9D6A-AE062FE75AE6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

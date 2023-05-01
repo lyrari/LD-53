@@ -27,10 +27,10 @@
 				</Event>
 				<Event Name="gameLoss" ID="{237CCAC7-B827-49B5-9DC7-4757F5A80A78}">
 					<ChildrenList>
-						<Action Name="" ID="{854373B9-6617-43FC-BA65-1D1507A2493D}" ShortID="98080984">
+						<Action Name="" ID="{E217A1D6-21AD-46D9-A66F-710256AB3783}" ShortID="655291403">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="gameLoss" ID="{015300CB-DC4A-4980-951C-0D35582A14C0}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+									<ObjectRef Name="gameLoss" ID="{CBE974C0-F2D4-4333-9C23-7CE0EFED61E3}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

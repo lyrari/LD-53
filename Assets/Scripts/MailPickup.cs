@@ -111,6 +111,11 @@ public class MailPickup : MonoBehaviour
         // TODO: Play failure sound
     }
 
+    public void SetNextMailTime()
+    {
+        nextMailSpawn = Time.time + mailMinDelay + Random.Range(0, mailVariation);
+    }
+
     // Mail bu tton done, disable timeout
     public void PressMailButton()
     {

@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
+    public BoolSO m_SpookyMeterActive;
+    public FloatSO m_SpookyMeter;
+
+    public Color EvilLightColor;
+
     public Light TestLight;
     public Light RoomMainLight;
     public Light RoomAmbientLight;
@@ -17,6 +22,11 @@ public class LightManager : MonoBehaviour
     public Material SwitchOnMaterial;
     public Material SwitchOffMaterial;
     public MeshRenderer LightSwitchRenderer;
+
+    // Spooky lights out
+    public float minLightsOutTime = 45f;
+    public float lightsOutVariance = 15f;
+    float m_NextLightsOutTime = float.MaxValue;
 
     Coroutine LightFlickerCoroutine;
     bool LightsOutLastFrame;
@@ -37,10 +47,17 @@ public class LightManager : MonoBehaviour
         m_NextLightFlickerTime = Time.time + minLightFlicker + Random.Range(0, lightFlickerVariance);
     }
 
+    public void PrepSpookyMeter()
+    {
+        m_NextLightsOutTime = Time.time + minLightsOutTime + Random.Range(0, lightsOutVariance);
+        RoomMainLight.color = EvilLightColor;
+    }
+
     // Update is called once per frame
     
     void Update()
     {
+
         if (Time.time > m_NextLightFlickerTime)
         {
             LightFlickerCoroutine = StartCoroutine(flickerLight(RoomMainLight));
@@ -57,6 +74,18 @@ public class LightManager : MonoBehaviour
         {
             Flashlight.enabled = !Flashlight.enabled;
             AkSoundEngine.PostEvent("flashLight", this.gameObject);
+        }
+
+        // SPOOK
+
+        if (m_SpookyMeterActive.value)
+        {
+            RoomMainLight.intensity -= (m_SpookyMeter.value / 2000f) * Time.deltaTime;
+        }
+
+        if (m_SpookyMeterActive.value && Time.time > m_NextLightsOutTime)
+        {
+            LightsOut.value = true;
         }
 
 

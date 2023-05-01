@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     public ScoreTracker m_ScoreTracker;
+    public FloatSO m_SpookyMeter;
+    public BoolSO m_SpookyMeterActive;
 
     Camera MainCamera;
     public float InteractionRange = 1.5f;
@@ -94,6 +96,10 @@ public class PlayerInteraction : MonoBehaviour
                         } else
                         {
                             m_ScoreTracker.failures++;
+                            if (m_SpookyMeterActive.value)
+                            {
+                                m_SpookyMeter.value += 10f;
+                            }
                         }
 
                         Debug.Log("Place in bin success: " + success);

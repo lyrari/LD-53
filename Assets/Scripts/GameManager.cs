@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     public int FailuresForDeath = 3;
     public int SuccessesForWin = 30;
 
@@ -17,19 +18,34 @@ public class GameManager : MonoBehaviour
     public BoolSO m_TutorialMode;
     public BoolSO m_GameOver;
 
+    // SPOOKS
+    public FloatSO m_SpookyMeter;
+    public BoolSO SpookyMeterActive;
+
     public GameObject ScreenCoveringEffect;
     public Light SceneLight;
     public Color VictoryColor;
     public Color FailureColor;
 
+    public Timer timerRef;
+
     // Start is called before the first frame update
     void Start()
     {
+        m_SpookyMeter.value = 0;
+        SpookyMeterActive.value = false;
+
         m_GameOver.value = false;
         m_TutorialMode.value = true;
         GameOverPanel.SetActive(false);
 
         ScreenCoveringEffect.GetComponent<Animator>().SetTrigger("FadeFromBlack");
+    }
+
+    public void initSpookyMeter()
+    {
+        m_SpookyMeter.value = 10f;
+        SpookyMeterActive.value = true;
     }
 
     // Update is called once per frame
@@ -47,9 +63,15 @@ public class GameManager : MonoBehaviour
             }
             return;
         }
+
+        if (SpookyMeterActive.value)
+        {
+            m_SpookyMeter.value += Time.deltaTime * 0.25f;
+            AkSoundEngine.SetRTPCValue("spookyMeter", m_SpookyMeter.value);
+        }
        
 
-        if (!m_TutorialMode.value && m_ScoreTracker.failures >= FailuresForDeath)
+        if ((!m_TutorialMode.value && m_ScoreTracker.failures >= FailuresForDeath) || timerRef.currentTime < 0)
         {
             Debug.Log("Game over");
             Image screenCoverImage = ScreenCoveringEffect.GetComponent<Image>();

@@ -7,6 +7,7 @@ public class DebugPanel : MonoBehaviour
 {
     public BoolSO LightsOut;
     public BoolSO Debug;
+    public Timer timer;
 
     public MailPickup MailPickupThing;
     private void Update()
@@ -21,6 +22,11 @@ public class DebugPanel : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             MailPickupThing.ForceSpawnMail();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            timer.InitTimer();
         }
     }
 }

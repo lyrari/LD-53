@@ -7,13 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public float m_MoveSpeed = 12f;
     public bool m_IsMoving = false;
-    public float stepWait = 0.3f;
+    public float stepWait = 0.8f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(SoundTest());
-    }
+    Coroutine footstepCoroutine;
 
     // Update is called once per frame
     void Update()
@@ -24,8 +20,15 @@ public class PlayerMovement : MonoBehaviour
         if (SideMovement > 0 || FrontBackMovement > 0)
         {
             m_IsMoving = true;
+            if (footstepCoroutine == null)
+            {
+                footstepCoroutine = StartCoroutine(FootstepLoop());
+            }
         }
-        else m_IsMoving = false;
+        else
+        {
+            m_IsMoving = false;
+        }
 
         Vector3 move = transform.right * SideMovement + transform.forward * FrontBackMovement;
         controller.Move(move * m_MoveSpeed * Time.deltaTime);
@@ -34,12 +37,13 @@ public class PlayerMovement : MonoBehaviour
     {
         AkSoundEngine.PostEvent("footStepping", this.gameObject);
     }
-    IEnumerator SoundTest()
+    IEnumerator FootstepLoop()
     {
         while (m_IsMoving)
         {
             SoundFootstepping();
             yield return new WaitForSeconds(stepWait);
         }
+        footstepCoroutine = null;
     }
 }

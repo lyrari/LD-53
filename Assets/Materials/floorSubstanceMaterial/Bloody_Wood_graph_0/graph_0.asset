@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssetPath: Assets/Materials/floorSubstanceMaterial/Bloody_Wood.sbsar
   OutputPath: Assets\Materials\floorSubstanceMaterial\Bloody_Wood_graph_0
-  RawData: {fileID: 0}
+  RawData: {fileID: -244192453324840774, guid: be5791fcd3ba5cd47b02449937970921, type: 3}
   Name: graph_0
   IsRoot: 1
   FlagedForDelete: 0
@@ -140,8 +140,7 @@ MonoBehaviour:
   GenerateAllMipmaps: 1
   OutputMaterial: {fileID: 0}
   DefaultPreset: " <sbspreset pkgurl=\"pkg://Bloody_Wood\" label=\"\" >\n  <presetinput
-    identifier=\"$outputsize\" uid=\"837915602\" type=\"8\" value=\"10,10\" />\n
-    </sbspreset>\n"
+    identifier=\"$outputsize\" uid=\"837915602\" type=\"8\" value=\"10,10\" />\n</sbspreset>\n"
   MaterialShader: 
   RenderTextures: 0
   OutputRemaped: 0

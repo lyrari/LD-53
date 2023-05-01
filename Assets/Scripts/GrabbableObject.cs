@@ -9,11 +9,34 @@ public class GrabbableObject : MonoBehaviour
 
     public DepositBin.BinType MyCorrectBin;
 
+    public float HellTimer = 20f;
+    float timeUntilDestruction;
+
     // Any other info about the object should go here - like mail stats, destination
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        if (MyCorrectBin == DepositBin.BinType.Hell)
+        {
+            timeUntilDestruction = Time.time + HellTimer;
+        } else
+        {
+            timeUntilDestruction = float.MaxValue;
+        }
+    }
+
+    private void Update()
+    {
+        if (Time.time > timeUntilDestruction)
+        {
+            AkSoundEngine.PostEvent("deliverFail", this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 
     public void ToggleGrabbed()

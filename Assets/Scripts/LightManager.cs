@@ -86,7 +86,7 @@ public class LightManager : MonoBehaviour
 
         if (m_SpookyMeterActive.value)
         {
-            RoomMainLight.intensity -= (m_SpookyMeter.value / 2000f) * Time.deltaTime;
+            RoomMainLight.intensity -= (m_SpookyMeter.value / 3000f) * Time.deltaTime;
         }
 
 

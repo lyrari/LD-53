@@ -41,7 +41,6 @@ public class CreepyTutorialLetter : MonoBehaviour
 
         tutorialMode.value = false;
         FadeAnimator.SetTrigger("FadeToBlack");
-        DemonAltar.SetActive(true);
         MailPickupRef.SetNextMailTime();
         GameManagerRef.initSpookyMeter();
         m_ScoreTracker.failures = 0;
@@ -56,6 +55,7 @@ public class CreepyTutorialLetter : MonoBehaviour
         yield return new WaitForSeconds(5f);
         FadeAnimator.SetTrigger("CutToNormal");
         TimerRef.InitTimer();
+        DemonAltar.SetActive(true);
 
         yield return new WaitForSeconds(3f);
         MailPickupRef.ForceSpawnMail();

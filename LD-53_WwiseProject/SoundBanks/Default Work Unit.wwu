@@ -14,6 +14,7 @@
 								<ObjectRef Name="reduceAltar" ID="{88C263AA-5A2E-42A6-91D1-C5EC9B48BE7D}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="deliverFail" ID="{CC67223A-A0CD-434C-AE0C-9D7361A4A11C}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="startGame" ID="{F1E6F49A-AE93-4387-B285-0BB350185B94}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gameWin" ID="{0CA5CDA9-AB00-438D-A9CB-F73ED99DDF42}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="mailPickup" ID="{BF20C4DC-2DED-4570-B9EA-6E51B5E6D381}" WorkUnitID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="timeGone" ID="{A8FE1981-1C72-457A-ABD6-84320589CA51}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="musicStart" ID="{A1F0CFEA-5B8E-4636-B418-1E8FDB07DFA5}" WorkUnitID="{E1C5397B-968C-4157-AEBF-C351C49D2955}" Origin="Manual" Filter="7"/>
@@ -22,6 +23,7 @@
 								<ObjectRef Name="mailMove" ID="{03E49948-D72A-47FF-BC79-62792E65F4BC}" WorkUnitID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="demonScrawl" ID="{6FD9B53C-489C-4926-A389-688E4346EBDD}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="evilAltar" ID="{6EB43803-BD5B-4999-A3A5-E25C05D0FB96}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gameLoss" ID="{237CCAC7-B827-49B5-9DC7-4757F5A80A78}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="mailFooled" ID="{9CD00DCF-9307-4A5F-A73B-DD7247B4FD62}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="lightSwitch" ID="{1C1E994E-07DE-4B4A-8BD6-30D2EC3F04D0}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="timeLow" ID="{9EE8A0C4-5E13-4BD3-9CFB-A99CEAC227E0}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>

@@ -34,7 +34,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{98F2CA00-F36F-18DF-C41B-A3E6A9D6645A}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{CC2F62E2-26BF-A472-DBBE-1500D9655653}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -53,6 +53,10 @@
 				<File Id="55212877" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wall_Light_Double_Switch_Off-004.wav</ShortName>
 					<CachePath>SFX/Wall_Light_Double_Switch_Off-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="61753590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>roundLoss.wav</ShortName>
+					<CachePath>SFX/roundLoss_10C4C929.wem</CachePath>
 				</File>
 				<File Id="66560071" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailFooled-003.wav</ShortName>
@@ -149,6 +153,10 @@
 				<File Id="459715231" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-006.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="523120054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>towerUpgraded.wav</ShortName>
+					<CachePath>SFX/towerUpgraded_10C4C929.wem</CachePath>
 				</File>
 				<File Id="533200720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood Footstep-003.wav</ShortName>
@@ -346,6 +354,16 @@
 						<MediaRef Id="1028183235"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2707952142" Name="gameLoss" DurationType="OneShot" DurationMin="2.5" DurationMax="2.5">
+					<MediaRefs>
+						<MediaRef Id="61753590"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1776280627" Name="gameWin" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="523120054"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3407736689" Name="lightFlicker" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.3414028" DurationMax="1.4628099">
 					<MediaRefs>
 						<MediaRef Id="46811238"/>
@@ -431,5 +449,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6C3C4B3A-2A2D-36EA-EEF0-8FB6276044CD}</FileHash>
+	<FileHash>{9ECF3CA7-BB87-FF59-4B1A-0DE0A013CBFB}</FileHash>
 </SoundBanksInfo>

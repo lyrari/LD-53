@@ -9,7 +9,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1504742439	lightSwitch			\Default Work Unit\Objects\lightSwitch	
 	1521187885	startGame			\Default Work Unit\UI\startGame	
 	1685525603	timeGone			\Default Work Unit\Ambient\timeGone	
+	1776280627	gameWin			\Default Work Unit\UI\gameWin	
 	1814714670	demonNote			\Default Work Unit\Ambient\demonNote	
+	2707952142	gameLoss			\Default Work Unit\UI\gameLoss	
 	2852856182	deliverEvil			\Default Work Unit\Objects\deliverEvil	
 	3073589598	demonSighted			\Default Work Unit\Ambient\demonSighted	
 	3142306311	mailFooled			\Default Work Unit\Objects\mailFooled	
@@ -31,6 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	33454414	paperMoves-008	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-008_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailMove\paperMoves-008		124160
 	46811238	lightFlicker3	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\lightFlicker3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\lightFlicker\lightFlicker3		269048
 	55212877	Wall_Light_Double_Switch_Off-004	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Wall_Light_Double_Switch_Off-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\lightSwitch\Wall_Light_Double_Switch_Off-004		35024
+	61753590	gameLoss	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\roundLoss_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Game Conditions\gameLoss		480096
 	66560071	mailFooled-003	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\mailFooled-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailFooled\mailFooled-003		191012
 	72783061	Wood Footstep-007	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Wood Footstep-007_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-007		65884
 	89063372	Wood Footstep-005	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Wood Footstep-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-005		65884
@@ -55,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	399424045	paperMoves-005	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\paperMoves-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailMove\paperMoves-005		117792
 	447718734	mailFooled-007	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\mailFooled-007_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailFooled\mailFooled-007		401004
 	459715231	Wood Footstep-006	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Wood Footstep-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-006		65884
+	523120054	gameWin	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\towerUpgraded_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Game Conditions\gameWin		384096
 	533200720	Wood Footstep-003	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\Wood Footstep-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-003		65884
 	549940009	evilMailAppear	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\evilMailAppear_7BCF7F23.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\evilMailAppear		578100
 	558181291	deliverFailEvil	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Windows\SFX\deliverFailEvil_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverFail\deliverFailEvil		384096

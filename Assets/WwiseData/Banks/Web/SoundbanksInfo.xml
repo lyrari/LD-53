@@ -34,7 +34,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E4BB2E71-3C52-54C5-F2B4-C6D97B3DBDFC}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{DE6F15E6-D26B-24F4-BF0E-DE47938D5BBF}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -156,7 +156,7 @@
 				</File>
 				<File Id="549940009" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>evilMailAppear.wav</ShortName>
-					<CachePath>SFX/evilMailAppear_30321868.wem</CachePath>
+					<CachePath>SFX/evilMailAppear_7BCF7F23.wem</CachePath>
 				</File>
 				<File Id="558181291" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverFailEvil.wav</ShortName>
@@ -240,7 +240,7 @@
 				</File>
 				<File Id="956125473" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailBurned.wav</ShortName>
-					<CachePath>SFX/mailBurned_A207B0D1.wem</CachePath>
+					<CachePath>SFX/mailBurned_44D7FA48.wem</CachePath>
 				</File>
 				<File Id="999103658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailFooled-004.wav</ShortName>
@@ -431,5 +431,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{893EF5AE-3D30-7F5E-E78B-7CC0F821AE65}</FileHash>
+	<FileHash>{266BCAD4-C99E-6075-8F99-DAA562EF4F1F}</FileHash>
 </SoundBanksInfo>

@@ -34,7 +34,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{789388B2-DCE5-BD2C-A949-D63380A39C03}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{183A1686-E969-9406-4558-9672CAA9DCC8}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -268,7 +268,7 @@
 				</File>
 				<File Id="1044113872" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
-					<CachePath>SFX/startGame_12668392.wem</CachePath>
+					<CachePath>SFX/startGame_BAE7097D.wem</CachePath>
 				</File>
 				<File Id="1067915172" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Clock 070.wav</ShortName>
@@ -432,7 +432,7 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="704335073" Name="reduceAltar" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1521187885" Name="startGame" DurationType="OneShot" DurationMin="6.669709" DurationMax="6.669709">
+				<Event Id="1521187885" Name="startGame" DurationType="OneShot" DurationMin="5.764352" DurationMax="5.764352">
 					<MediaRefs>
 						<MediaRef Id="1044113872"/>
 					</MediaRefs>
@@ -449,5 +449,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA6124F4-E47B-0126-9B43-675AF4EC2A7E}</FileHash>
+	<FileHash>{60244630-3EC3-2926-2306-C8B1C2ADBEDE}</FileHash>
 </SoundBanksInfo>

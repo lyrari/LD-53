@@ -86,6 +86,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1027921463	deliverFailNormal	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\deliverFailNormal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverFail\deliverFailNormal		232832
 	1028183235	Wood Footstep-002	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\Wood Footstep-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-002		65884
 	1040506767	lightFlicker	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\lightFlicker_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\lightFlicker\lightFlicker		269048
-	1044113872	startGame	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\startGame_12668392.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Buttons\startGame		1280680
+	1044113872	startGame	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\startGame_BAE7097D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Buttons\startGame		1106852
 	1067915172	timeTicking	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Mac\SFX\Clock 070_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\timeTicking		1535840
 

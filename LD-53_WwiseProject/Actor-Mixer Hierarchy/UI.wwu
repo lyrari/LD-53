@@ -65,9 +65,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="startGame" ID="{3BA88E82-1C8E-4700-BBBF-FDFB72B80547}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0465465653529281"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.0165726674411"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.73560312741686"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="6.66970939829606"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.76435170301377"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>startGame.wav</AudioFile>

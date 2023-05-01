@@ -11,6 +11,15 @@
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{9E0696B1-6A79-4FF1-874D-008A0C29499C}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="startGame" ID="{7AABE968-0A5E-4CE2-8968-7BA620B4C39F}" WorkUnitID="{CBA93D73-FC0A-4FD3-BFE4-3D3A13BB6A42}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
 						</Action>
 						<Action Name="" ID="{02359A73-ACC8-494F-8758-E45F6191C1E3}" ShortID="690195420">
 							<PropertyList>

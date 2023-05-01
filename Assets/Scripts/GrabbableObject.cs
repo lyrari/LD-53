@@ -20,5 +20,11 @@ public class GrabbableObject : MonoBehaviour
     {
         grabbed = !grabbed;
         rb.isKinematic = !rb.isKinematic;
+
+        CreepyTutorialLetter creepletter = this.GetComponent<CreepyTutorialLetter>();
+        if (creepletter != null)
+        {
+            creepletter.OnCreepyLetterPickup();
+        }
     }
 }

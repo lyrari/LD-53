@@ -17,16 +17,27 @@ public class MailPickup : MonoBehaviour
     bool buttonActive;
     float timeoutTime;
 
+    // Tutorial
+    public LetterSpawner TutorialMailBag;
+    public GameObject TutorialText;
+    bool tutorialClickDone;
+    public GameObject CreepyLetter;
+
     public float mailMinDelay = 30f;
     public float mailVariation = 10f;
     public float nextMailSpawn;
+
+    bool creepyLetterSpawned;
+    public float tutTimeUntilCreepyLetterSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
         timeoutTime = float.MaxValue;
         nextMailSpawn = float.MaxValue;
+        tutTimeUntilCreepyLetterSpawn = float.MaxValue;
         MailButton.material = ButtonOff;
+        StartCoroutine(TutorialRing());
     }
 
     // Update is called once per frame
@@ -43,7 +54,25 @@ public class MailPickup : MonoBehaviour
         {
             Timeout();
         }
+
+        // Spawn creepy letter
+        if (!creepyLetterSpawned && (Time.time > tutTimeUntilCreepyLetterSpawn || (scoreTracker.successes + scoreTracker.failures >= 5)))
+        {
+            creepyLetterSpawned = true;
+            AkSoundEngine.PostEvent("mailFaked", this.gameObject); //evilMailAppeared
+            CreepyLetter.SetActive(true);
+        }
         
+    }
+
+    // Wait 5 seconds then ring and enable button
+    IEnumerator TutorialRing()
+    {
+        yield return new WaitForSeconds(5f);
+        Debug.Log("Tutorial ring - Mail is ready!");
+        buttonActive = true;
+        MailButton.material = ButtonOn;
+        AkSoundEngine.PostEvent("mailReady", this.gameObject);
     }
 
     // Call this to set nextMailSpawn to right now.
@@ -83,6 +112,20 @@ public class MailPickup : MonoBehaviour
     public void PressMailButton()
     {
         if (!buttonActive) return;
+
+        //tutorial logic
+        if (!tutorialClickDone)
+        {
+            TutorialMailBag.gameObject.SetActive(true);
+            TutorialText.SetActive(false);
+            buttonActive = false;
+            MailButton.material = ButtonOff;
+
+            tutorialClickDone = true;
+            tutTimeUntilCreepyLetterSpawn = Time.time + mailMinDelay;
+            return;
+        }
+
 
         Debug.Log("Mail dispensing");
         Instantiate(MailBagPrefab);

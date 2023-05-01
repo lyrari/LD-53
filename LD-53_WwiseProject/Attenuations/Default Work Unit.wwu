@@ -25,17 +25,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>5.00817</XPos>
-											<YPos>-8.56727</YPos>
+											<XPos>7.5</XPos>
+											<YPos>-8.5</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>9.96189</XPos>
-											<YPos>-18.08131</YPos>
+											<XPos>12.5</XPos>
+											<YPos>-14.5</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>29.99456</XPos>
+											<XPos>25</XPos>
 											<YPos>-200</YPos>
 											<Flags>0</Flags>
 										</Point>

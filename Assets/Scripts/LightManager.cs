@@ -49,7 +49,7 @@ public class LightManager : MonoBehaviour
 
     public void PrepSpookyMeter()
     {
-        m_NextLightsOutTime = Time.time + minLightsOutTime + Random.Range(0, lightsOutVariance);
+        m_NextLightsOutTime = Time.time + minLightsOutTime + Random.Range(0, lightsOutVariance) - m_SpookyMeter.value / 5;
         RoomMainLight.color = EvilLightColor;
     }
 
@@ -57,6 +57,12 @@ public class LightManager : MonoBehaviour
     
     void Update()
     {
+        if (m_SpookyMeterActive.value && Time.time > m_NextLightsOutTime)
+        {
+            Debug.Log("Turnout lights");
+            LightsOut.value = true;
+            PrepSpookyMeter();
+        }
 
         if (Time.time > m_NextLightFlickerTime)
         {
@@ -81,11 +87,6 @@ public class LightManager : MonoBehaviour
         if (m_SpookyMeterActive.value)
         {
             RoomMainLight.intensity -= (m_SpookyMeter.value / 2000f) * Time.deltaTime;
-        }
-
-        if (m_SpookyMeterActive.value && Time.time > m_NextLightsOutTime)
-        {
-            LightsOut.value = true;
         }
 
 

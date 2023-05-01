@@ -10,13 +10,14 @@ public class LetterSpawner : MonoBehaviour
 
     public Letter LetterPrefab;
     public int LettersInBag = 1;
+    Vector3 LetterOffset = new Vector3(0.05f, 0);
     
-    public void OpenBag()
+    public void OpenBag(Vector3 lettersPosition)
     {
         for (int i = 0; i < LettersInBag; i++)
         {
             Letter letter = Instantiate(LetterPrefab);
-            letter.transform.position = this.transform.position; // TODO: spawn them in better spots?
+            letter.transform.position = lettersPosition + LetterOffset * i; // TODO: spawn them in better spots?
 
             int randomInt = Random.Range(0, 3);
             Material matType;

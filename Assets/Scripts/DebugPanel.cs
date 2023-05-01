@@ -20,7 +20,7 @@ public class DebugPanel : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            TestSpawner.OpenBag();
+            //TestSpawner.OpenBag();
         }
     }
 }

@@ -83,6 +83,14 @@ public class PlayerInteraction : MonoBehaviour
                         HeldObject = null;
                         return;
                     }
+
+                    // Placing mail bag onto desk
+                    LetterSpawner letterSpawn = HeldObject.GetComponent<LetterSpawner>();
+                    if (letterSpawn != null && hit.transform.CompareTag("Desk"))
+                    {
+                        Debug.Log("Mail > Desk");
+                        letterSpawn.OpenBag(hit.point);
+                    }
                 }
 
                 // Else, drop the item

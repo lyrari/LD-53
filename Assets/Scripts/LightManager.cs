@@ -74,7 +74,7 @@ public class LightManager : MonoBehaviour
 
         RoomMainLight.enabled = !LightsOut.value;
         RoomAmbientLight.enabled = !LightsOut.value;
-        Flashlight.enabled = LightsOut.value;
+        //Flashlight.enabled = LightsOut.value;
         AkSoundEngine.PostEvent("lightSwitch", this.gameObject);
 
         if (LightsOut.value)

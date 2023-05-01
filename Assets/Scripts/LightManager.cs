@@ -31,7 +31,7 @@ public class LightManager : MonoBehaviour
     Coroutine LightFlickerCoroutine;
     bool LightsOutLastFrame;
     
-
+    //Substance Parameter Stuff
 
     // Start is called before the first frame update
     void Start()
@@ -123,16 +123,32 @@ public class LightManager : MonoBehaviour
 
         float lightIntensityInitial = l.intensity;
         float lightIntensityFlicker = lightIntensityInitial / 2;
+        float lightIntensityFlickerOff = 0;
 
-        AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
-        l.intensity = lightIntensityFlicker;
-        yield return new WaitForSeconds(0.1f);
-        l.intensity = lightIntensityInitial;
-        yield return new WaitForSeconds(0.1f);
-        l.intensity = lightIntensityFlicker;
-        yield return new WaitForSeconds(0.1f);
-        l.intensity = lightIntensityInitial;
-
+        if (m_SpookyMeter.value > 40)
+        {
+            AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
+            l.intensity = lightIntensityFlickerOff;
+            yield return new WaitForSeconds(0.4f);
+            //Substance Change to Bloody Here
+            l.intensity = lightIntensityInitial;
+            yield return new WaitForSeconds(0.4f);
+            l.intensity = lightIntensityFlickerOff;
+            yield return new WaitForSeconds(0.4f);
+            //Substance Change to Normal Here
+            l.intensity = lightIntensityInitial;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
+            l.intensity = lightIntensityFlicker;
+            yield return new WaitForSeconds(0.1f);
+            l.intensity = lightIntensityInitial;
+            yield return new WaitForSeconds(0.1f);
+            l.intensity = lightIntensityFlicker;
+            yield return new WaitForSeconds(0.1f);
+            l.intensity = lightIntensityInitial;
+        }
         LightFlickerCoroutine = null;
     }
 }

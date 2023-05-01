@@ -58,6 +58,10 @@ public class PlayerInteraction : MonoBehaviour
                     Debug.Log("Grab object");
                     HeldObject = grabObject;
                     grabObject.ToggleGrabbed();
+                    Debug.Log(grabObject.gameObject.name);
+                    Letter letter = HeldObject.GetComponent<Letter>();
+                    if (letter != null) { AkSoundEngine.PostEvent("mailMove", this.gameObject); }
+                    else AkSoundEngine.PostEvent("mailPickup", this.gameObject);
 
                     grabObject.transform.SetParent(HoldingObjectLocation);
                     grabObject.transform.localPosition = Vector3.zero;

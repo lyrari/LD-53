@@ -34,7 +34,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{23BF6ED6-2D68-50A5-3C45-A82216EB124E}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E4BB2E71-3C52-54C5-F2B4-C6D97B3DBDFC}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -154,6 +154,10 @@
 					<ShortName>Wood Footstep-003.wav</ShortName>
 					<CachePath>SFX/Wood Footstep-003_10C4C929.wem</CachePath>
 				</File>
+				<File Id="549940009" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>evilMailAppear.wav</ShortName>
+					<CachePath>SFX/evilMailAppear_30321868.wem</CachePath>
+				</File>
 				<File Id="558181291" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverFailEvil.wav</ShortName>
 					<CachePath>SFX/deliverFailEvil_10C4C929.wem</CachePath>
@@ -234,13 +238,13 @@
 					<ShortName>mailFooled-011.wav</ShortName>
 					<CachePath>SFX/mailFooled-011_10C4C929.wem</CachePath>
 				</File>
+				<File Id="956125473" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mailBurned.wav</ShortName>
+					<CachePath>SFX/mailBurned_A207B0D1.wem</CachePath>
+				</File>
 				<File Id="999103658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>mailFooled-004.wav</ShortName>
 					<CachePath>SFX/mailFooled-004_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1012681276" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>mailBurn.wav</ShortName>
-					<CachePath>SFX/mailBurn_2CD8726B.wem</CachePath>
 				</File>
 				<File Id="1027921463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>deliverFailNormal.wav</ShortName>
@@ -275,9 +279,9 @@
 						<MediaRef Id="914220114"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2852856182" Name="deliverEvil" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.4641143" DurationMax="1.643413">
+				<Event Id="2852856182" Name="deliverEvil" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.8412645" DurationMax="3.1892118">
 					<MediaRefs>
-						<MediaRef Id="1012681276"/>
+						<MediaRef Id="956125473"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="309925616" Name="deliverFail" DurationType="OneShot" DurationMin="1.9152067" DurationMax="2.0885475">
@@ -304,6 +308,25 @@
 				<Event Id="3422208525" Name="evilAltar" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="31150306"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="433384809" Name="evilMailAppear" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.8828068" DurationMax="3.1437228">
+					<MediaRefs>
+						<MediaRef Id="66560071"/>
+						<MediaRef Id="189399481"/>
+						<MediaRef Id="198426973"/>
+						<MediaRef Id="226414009"/>
+						<MediaRef Id="327347345"/>
+						<MediaRef Id="351885238"/>
+						<MediaRef Id="447718734"/>
+						<MediaRef Id="549940009"/>
+						<MediaRef Id="759771869"/>
+						<MediaRef Id="783070878"/>
+						<MediaRef Id="788993450"/>
+						<MediaRef Id="848554182"/>
+						<MediaRef Id="898266274"/>
+						<MediaRef Id="947042403"/>
+						<MediaRef Id="999103658"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1167979795" Name="flashLight" DurationType="OneShot" DurationMin="0.22194451" DurationMax="0.24203219">
@@ -408,5 +431,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{98D0DC4F-A357-5C8F-8B2A-6C468AD55E50}</FileHash>
+	<FileHash>{893EF5AE-3D30-7F5E-E78B-7CC0F821AE65}</FileHash>
 </SoundBanksInfo>

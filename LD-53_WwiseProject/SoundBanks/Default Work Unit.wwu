@@ -25,6 +25,7 @@
 								<ObjectRef Name="mailFooled" ID="{9CD00DCF-9307-4A5F-A73B-DD7247B4FD62}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="lightSwitch" ID="{1C1E994E-07DE-4B4A-8BD6-30D2EC3F04D0}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="timeLow" ID="{9EE8A0C4-5E13-4BD3-9CFB-A99CEAC227E0}" WorkUnitID="{D18E0146-7668-44AA-A322-70A6FD9C45B6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="evilMailAppear" ID="{08F11A3F-6601-4C5E-9DCF-46343C584B5C}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="flashLight" ID="{4544D92D-9C2F-4CC7-A68C-875BDFCDFB13}" WorkUnitID="{6FC95630-4FDB-4404-B739-48060EC5DB88}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="deliverCorrect" ID="{CD32CEAC-B43E-4CCC-9854-67F891583136}" WorkUnitID="{058FE07A-0312-4177-9682-6182DEE5532B}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="buttonClick" ID="{F3A12F96-4D7B-4F05-9855-37D338FF305F}" WorkUnitID="{E05741F5-7827-44BD-A8FD-80BA0C4F458D}" Origin="Manual" Filter="7"/>

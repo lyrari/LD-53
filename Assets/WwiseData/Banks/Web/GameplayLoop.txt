@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	309925616	deliverFail			\Default Work Unit\Objects\deliverFail	
+	433384809	evilMailAppear			\Default Work Unit\Objects\evilMailAppear	
 	575186853	mailReady			\Default Work Unit\Objects\mailReady	
 	704335073	reduceAltar			\Default Work Unit\Objects\reduceAltar	
 	760461422	deliverCorrect			\Default Work Unit\Objects\deliverCorrect	
@@ -55,6 +56,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	447718734	mailFooled-007	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\mailFooled-007_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailFooled\mailFooled-007		401004
 	459715231	Wood Footstep-006	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\Wood Footstep-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-006		65884
 	533200720	Wood Footstep-003	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\Wood Footstep-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-003		65884
+	549940009	evilMailAppear	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\evilMailAppear_30321868.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\evilMailAppear		578100
 	558181291	deliverFailEvil	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\deliverFailEvil_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverFail\deliverFailEvil		384096
 	640616034	buttonClick	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\buttonClick_0BFD5657.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\Buttons\buttonClick		4412
 	690803210	mailReady	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\mailReady_AB8892FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailReady\mailReady		385692
@@ -75,8 +77,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	924068350	paperMoves-002	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\paperMoves-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailMove\paperMoves-002		112112
 	940913837	Wood Footstep-008	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\Wood Footstep-008_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-008		65884
 	947042403	mailFooled-011	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\mailFooled-011_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailFooled\mailFooled-011		288096
+	956125473	mailBurn	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\mailBurned_A207B0D1.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailBurn		531096
 	999103658	mailFooled-004	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\mailFooled-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailFooled\mailFooled-004		288096
-	1012681276	mailBurn	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\mailBurn_2CD8726B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\mailBurn		297920
 	1027921463	deliverFailNormal	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\deliverFailNormal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\mailDeliverFail\deliverFailNormal		232832
 	1028183235	Wood Footstep-002	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\Wood Footstep-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\footStep\Wood Footstep-002		65884
 	1040506767	lightFlicker	D:\Game_Production\UnityProjects\LD-53\LD-53_WwiseProject\.cache\Web\SFX\lightFlicker_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\lightFlicker\lightFlicker		269048

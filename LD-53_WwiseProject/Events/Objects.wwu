@@ -133,6 +133,27 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="evilMailAppear" ID="{08F11A3F-6601-4C5E-9DCF-46343C584B5C}">
+					<ChildrenList>
+						<Action Name="" ID="{EB4F990F-82DA-48A8-A5F4-56CADEE8089B}" ShortID="527026204">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="evilMailAppear" ID="{931F4EB9-6E88-48C4-B777-BA6967CC2040}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F542D411-37E9-4D55-8C80-4B17DB865D0C}" ShortID="728422862">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mailFooled" ID="{6F7C143B-6208-4A75-B7F4-1CDC97848AE5}" WorkUnitID="{B0B4389C-E27A-498C-8EB5-AE9ED6C141E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

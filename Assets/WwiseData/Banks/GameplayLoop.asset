@@ -24,22 +24,22 @@ MonoBehaviour:
     LocalizedStreamingMediaKeys: []
     LocalizedStreamingMediaValues:
       localizedMediaList: []
-  - WwisePlatform: Mac
+  - WwisePlatform: Web
     LocalizedBankKeys:
     - SFX
     LocalizedBanksValues:
-    - m_AssetGUID: a03fc581d59615446894cfb07c7e8c80
+    - m_AssetGUID: 6894e500432f9424a8fa638929b12827
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
     LocalizedStreamingMediaKeys: []
     LocalizedStreamingMediaValues:
       localizedMediaList: []
-  - WwisePlatform: Web
+  - WwisePlatform: Mac
     LocalizedBankKeys:
     - SFX
     LocalizedBanksValues:
-    - m_AssetGUID: 6894e500432f9424a8fa638929b12827
+    - m_AssetGUID: a03fc581d59615446894cfb07c7e8c80
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0

@@ -13,17 +13,6 @@ MonoBehaviour:
   m_Name: Init
   m_EditorClassIdentifier: 
   m_dataPerPlatformList:
-  - WwisePlatform: Mac
-    LocalizedBankKeys:
-    - SFX
-    LocalizedBanksValues:
-    - m_AssetGUID: 5124ed2dc9f26dc4ab85af34d882d2af
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    LocalizedStreamingMediaKeys: []
-    LocalizedStreamingMediaValues:
-      localizedMediaList: []
   - WwisePlatform: Web
     LocalizedBankKeys:
     - SFX
@@ -40,6 +29,17 @@ MonoBehaviour:
     - SFX
     LocalizedBanksValues:
     - m_AssetGUID: d62e3c9062ef2ad428232aca6536f7c4
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    LocalizedStreamingMediaKeys: []
+    LocalizedStreamingMediaValues:
+      localizedMediaList: []
+  - WwisePlatform: Mac
+    LocalizedBankKeys:
+    - SFX
+    LocalizedBanksValues:
+    - m_AssetGUID: 5124ed2dc9f26dc4ab85af34d882d2af
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0

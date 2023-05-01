@@ -8,6 +8,7 @@ public class DebugPanel : MonoBehaviour
     public BoolSO LightsOut;
     public BoolSO Debug;
 
+    public LetterSpawner TestSpawner;
     private void Update()
     {
         if (!Debug.value) return;
@@ -15,6 +16,11 @@ public class DebugPanel : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             LightsOut.Toggle();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            TestSpawner.OpenBag();
         }
     }
 }

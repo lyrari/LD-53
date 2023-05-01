@@ -10,7 +10,8 @@ public class DepositBin : MonoBehaviour
         Blue,
         Yellow,
         Discard,
-        Hell
+        Hell,
+        None,
     }
 
     public BinType MyBinType;

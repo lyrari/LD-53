@@ -364,7 +364,7 @@
 										<BlendTrackAssoc>
 											<ItemRef Name="deliverCorrectEvil" ID="{768C906F-374B-4EA6-9934-1DD1618C5B98}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>4.87901561351947</LeftEdgePos>
+												<LeftEdgePos>15</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>100</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
@@ -400,6 +400,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="deliverFailEvil" ID="{51E8D699-F4DA-4EDB-B1FF-0EC718D409F7}" ShortID="50684215">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -467,7 +474,7 @@
 										<BlendTrackAssoc>
 											<ItemRef Name="deliverFailEvil" ID="{51E8D699-F4DA-4EDB-B1FF-0EC718D409F7}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>5.02596638501102</LeftEdgePos>
+												<LeftEdgePos>15</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>100</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>

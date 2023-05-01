@@ -15,16 +15,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{8A035E61-8225-4FD2-B5AD-1DAAB82D8713}" ShortID="34443778">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="spookyMeter" ID="{19A5ED21-12FA-474A-8AE0-38FDB994F9E7}" WorkUnitID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{62E47221-DE3A-466F-ADED-5E2EEA678CFC}" ShortID="983049873">
 							<ReferenceList>
 								<Reference Name="Target">

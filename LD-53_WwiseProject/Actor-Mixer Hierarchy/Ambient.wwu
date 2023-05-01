@@ -16,108 +16,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="ambientBlendNeutral" ID="{322C4DCE-3437-494C-8ABB-C2AE3BE776AA}" ShortID="872785839">
-							<PropertyList>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Music" ID="{8417CD1A-B6B8-4458-994E-EA36DF718318}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SFXW001_indoor_basement neutral sound" ID="{D52A4317-6036-4A3F-9739-8496FC87F294}" ShortID="203546298">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SFXW001_indoor_basement neutral sound" ID="{F90CFFC0-2356-4D00-BF3A-E6209F90E996}">
-											<Language>SFX</Language>
-											<AudioFile>SFXW001_indoor_basement neutral sound.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="963334714"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SFXW001_indoor_basement neutral sound" ID="{F90CFFC0-2356-4D00-BF3A-E6209F90E996}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bluezone-BC0217-dark-ambience-047" ID="{D5E5FB9E-079C-4D51-AB35-ACF9E2F204C2}" ShortID="1067389188">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-11</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bluezone-BC0217-dark-ambience-047" ID="{72D5D0AA-C55A-48F7-BD22-4FECF4B30799}">
-											<Language>SFX</Language>
-											<AudioFile>Bluezone-BC0217-dark-ambience-047.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="803590986"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bluezone-BC0217-dark-ambience-047" ID="{72D5D0AA-C55A-48F7-BD22-4FECF4B30799}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="ambientBlendNeutral" ID="{FA96EDA2-8929-467B-AF53-3FF8842C15AC}" ShortID="74624012">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="spookyMeter" ID="{19A5ED21-12FA-474A-8AE0-38FDB994F9E7}" WorkUnitID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="SFXW001_indoor_basement neutral sound" ID="{D52A4317-6036-4A3F-9739-8496FC87F294}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>69.8162118976908</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="Bluezone-BC0217-dark-ambience-047" ID="{D5E5FB9E-079C-4D51-AB35-ACF9E2F204C2}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>4.93019838354152</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>100</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
-						</BlendContainer>
 						<BlendContainer Name="ambientBlendRain" ID="{575B286B-A1FB-442D-8005-E08F72BDDE93}" ShortID="114043975">
 							<PropertyList>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
@@ -166,7 +64,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-18</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -267,7 +165,7 @@
 										<BlendTrackAssoc>
 											<ItemRef Name="Bluezone-BC0217-dark-ambience-047" ID="{A6EBC9DC-CEEC-4967-A68D-919060BBCC36}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>5.07347795661302</LeftEdgePos>
+												<LeftEdgePos>15</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>100</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>

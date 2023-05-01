@@ -29,7 +29,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="spookyMeter" ID="{19A5ED21-12FA-474A-8AE0-38FDB994F9E7}"/>
-							<Value>16.6910688140556</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFXVolume" ID="{944F4969-901C-4A93-A056-AC5C66CDC140}"/>

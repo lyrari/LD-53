@@ -34,12 +34,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{45E33529-C0AE-4BA8-BE61-80A3DE6DB43C}" ShortID="1024871350">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
-							</PropertyList>
-							<ReferenceList/>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="gameWin" ID="{0CA5CDA9-AB00-438D-A9CB-F73ED99DDF42}">

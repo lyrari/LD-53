@@ -30,8 +30,11 @@ public class LightManager : MonoBehaviour
 
     Coroutine LightFlickerCoroutine;
     bool LightsOutLastFrame;
-    
+
     //Substance Parameter Stuff
+    //public SubstanceRuntimeGraph testGraph; LAGGY SHIT
+    public GameObject bloodyFloor;
+    public GameObject cleanFloor;
 
     // Start is called before the first frame update
     void Start()
@@ -129,13 +132,21 @@ public class LightManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
             l.intensity = lightIntensityFlickerOff;
-            yield return new WaitForSeconds(0.4f);
-            //Substance Change to Bloody Here
+            //testGraph.SetInputFloat("Blood_Intensity", .01f); THIS IS LAGGY
+            //testGraph.RenderAsync();
+            bloodyFloor.SetActive(true);
+            cleanFloor.SetActive(false);
+            yield return new WaitForSeconds(.5f);
             l.intensity = lightIntensityInitial;
-            yield return new WaitForSeconds(0.4f);
+            AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
+            yield return new WaitForSeconds(.5f);
             l.intensity = lightIntensityFlickerOff;
-            yield return new WaitForSeconds(0.4f);
-            //Substance Change to Normal Here
+            AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
+            //testGraph.SetInputFloat("Blood_Intensity", 0f); THIS IS LAGGY
+            //testGraph.RenderAsync();
+            bloodyFloor.SetActive(false);
+            cleanFloor.SetActive(true);
+            yield return new WaitForSeconds(.5f);
             l.intensity = lightIntensityInitial;
         }
         else
@@ -144,7 +155,7 @@ public class LightManager : MonoBehaviour
             l.intensity = lightIntensityFlicker;
             yield return new WaitForSeconds(0.1f);
             l.intensity = lightIntensityInitial;
-            yield return new WaitForSeconds(0.1f);
+           yield return new WaitForSeconds(0.1f);
             l.intensity = lightIntensityFlicker;
             yield return new WaitForSeconds(0.1f);
             l.intensity = lightIntensityInitial;

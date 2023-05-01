@@ -60,6 +60,9 @@ public class GameManager : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                m_SpookyMeter.value = 0;
+                AkSoundEngine.SetRTPCValue("spookyMeter", m_SpookyMeter.value);
+                SpookyMeterActive.value = false;
             }
             return;
         }
@@ -82,6 +85,7 @@ public class GameManager : MonoBehaviour
             m_GameOver.value = true;
             GameOverPanel.SetActive(true);
             GameOverMessage.text = "Delivered to the abyss...";
+            AkSoundEngine.PostEvent("gameLoss", this.gameObject);
         }
 
         if (m_ScoreTracker.successes >= SuccessesForWin) {
@@ -94,6 +98,7 @@ public class GameManager : MonoBehaviour
             m_GameOver.value = true;
             GameOverPanel.SetActive(true);
             GameOverMessage.text = "You won!";
+            AkSoundEngine.PostEvent("gameWin", this.gameObject);
         }
     }
 

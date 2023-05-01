@@ -5,13 +5,20 @@
 			<ChildrenList>
 				<Event Name="musicStart" ID="{A1F0CFEA-5B8E-4636-B418-1E8FDB07DFA5}">
 					<ChildrenList>
-						<Action Name="" ID="{BE2D080F-0812-4742-A856-A09553C25EBB}" ShortID="37923373">
+						<Action Name="" ID="{188BC0E0-CD3D-4A6D-B53C-59F5E3A6E43E}" ShortID="384869201">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{02359A73-ACC8-494F-8758-E45F6191C1E3}" ShortID="690195420">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ambientBlendRain" ID="{575B286B-A1FB-442D-8005-E08F72BDDE93}" WorkUnitID="{6A15519B-5125-489D-AB2D-736264D8B917}"/>
+									<ObjectRef Name="spookyMeter" ID="{19A5ED21-12FA-474A-8AE0-38FDB994F9E7}" WorkUnitID="{AF08755C-2FB3-437A-ABD5-EEF805C84CEF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

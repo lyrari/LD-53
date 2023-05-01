@@ -103,7 +103,7 @@ public class MailPickup : MonoBehaviour
         buttonActive = false;
         MailButton.material = ButtonOff;
         timeoutTime = float.MaxValue;
-        AkSoundEngine.PostEvent("mailDeliverFail", this.gameObject);
+        AkSoundEngine.PostEvent("deliverFail", this.gameObject);
 
         scoreTracker.failures++;
         nextMailSpawn = Time.time + (mailMinDelay / 2);

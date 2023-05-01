@@ -12,6 +12,7 @@ public class CreepyTutorialLetter : MonoBehaviour
 
     public Animator FadeAnimator;
     public GameObject DemonAltar;
+    public GameObject Clock;
     public Timer TimerRef;
     public MailPickup MailPickupRef;
     public GameManager GameManagerRef; // Spook init
@@ -60,6 +61,7 @@ public class CreepyTutorialLetter : MonoBehaviour
         yield return new WaitForSeconds(5f);
         FadeAnimator.SetTrigger("CutToNormal");
         TimerRef.InitTimer();
+        AkSoundEngine.PostEvent("timeLow", Clock);
         DemonAltar.SetActive(true);
 
         yield return new WaitForSeconds(3f);

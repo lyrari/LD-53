@@ -949,7 +949,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-29</Value>
+										<Value>-24</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -998,13 +998,13 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>50</XPos>
+																		<XPos>20</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>17.9503</YPos>
+																		<YPos>10</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>

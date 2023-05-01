@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class GrabbableObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    bool grabbed;
+    Rigidbody rb;
+
+    // Any other info about the object should go here - like mail stats, destination
+
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleGrabbed()
     {
-        
+        grabbed = !grabbed;
+        rb.isKinematic = !rb.isKinematic;
     }
 }

@@ -44,6 +44,13 @@ public class PlayerInteraction : MonoBehaviour
                     return;
                 }
 
+                MailButton mailButton = hit.transform.GetComponent<MailButton>();
+                if (mailButton != null)
+                {
+                    mailButton.ClickMailButton();
+                    return;
+                }
+
                 // Grab an object if not already grabbing one
                 GrabbableObject grabObject = hit.transform.GetComponent<GrabbableObject>();
                 if (grabObject != null && HeldObject == null)
@@ -69,6 +76,12 @@ public class PlayerInteraction : MonoBehaviour
                     DepositBin bin = hit.transform.GetComponent<DepositBin>();
                     if (bin != null)
                     {
+                        if (HeldObject.GetComponent<LetterSpawner>() != null)
+                        {
+                            // Don't allow mail bags to be thrown away
+                            return;
+                        }
+
                         // Place in bin: Destroy it and mark success/failure
                         bool success = bin.DepositInBin(HeldObject);
                         if (success)
@@ -78,6 +91,7 @@ public class PlayerInteraction : MonoBehaviour
                         {
                             m_ScoreTracker.failures++;
                         }
+
                         Debug.Log("Place in bin success: " + success);
                         Destroy(HeldObject.gameObject);
                         HeldObject = null;

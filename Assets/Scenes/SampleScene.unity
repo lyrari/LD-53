@@ -4514,7 +4514,8 @@ GameObject:
   - component: {fileID: 638117812}
   - component: {fileID: 638117811}
   - component: {fileID: 638117810}
-  m_Layer: 0
+  - component: {fileID: 638117813}
+  m_Layer: 6
   m_Name: SwitchButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4599,6 +4600,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638117808}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &638117813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638117808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5d8c950a4a615498f1e4ec2eef1078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MailPickup: {fileID: 1223002087}
 --- !u!1 &646257258
 GameObject:
   m_ObjectHideFlags: 0
@@ -6648,7 +6662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LightsOut: {fileID: 11400000, guid: a6b03008967e93e4289fba6776a36373, type: 2}
   Debug: {fileID: 11400000, guid: b1051425055f70b4aa9825da48f513cc, type: 2}
-  TestSpawner: {fileID: 1676485646}
+  MailPickupThing: {fileID: 1223002087}
 --- !u!1 &985868332
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,6 +7542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1223002086}
+  - component: {fileID: 1223002087}
   m_Layer: 0
   m_Name: MailPickup
   m_TagString: Untagged
@@ -7550,9 +7565,32 @@ Transform:
   - {fileID: 15532176}
   - {fileID: 509043057}
   - {fileID: 138793183}
+  - {fileID: 2016155779}
   m_Father: {fileID: 818811640}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223002087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223002085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd57342b9540afa448acb20c3f9ca797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTracker: {fileID: 11400000, guid: 78ab20be40119cb41ae50a63f1b0f787, type: 2}
+  ButtonOn: {fileID: 2100000, guid: 97d5df7aa09f8454a8c8fcfd672f2193, type: 2}
+  ButtonOff: {fileID: 2100000, guid: 30385f719f75d7643baf5ce0689f3c3d, type: 2}
+  MailButton: {fileID: 638117811}
+  MailBagPrefab: {fileID: 5133159174478123969, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
+  BagSpawnLocation: {fileID: 2016155779}
+  buttonTimeout: 10
+  mailMinDelay: 30
+  mailVariation: 10
+  nextMailSpawn: 0
 --- !u!1 &1225025920
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,7 +8385,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 563574426}
-  - {fileID: 1676485645}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11012,22 +11049,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665781324}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1676485645 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-  m_PrefabInstance: {fileID: 5133159176077539279}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1676485646 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5133159174478123969, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-  m_PrefabInstance: {fileID: 5133159176077539279}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4d58b0b769678b488392b78cb35aa14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1719984662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9160218005580821403, guid: cc1d19708d4c4334e9e8c0e46d1941f2, type: 3}
@@ -11652,14 +11673,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1860915883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4d58b0b769678b488392b78cb35aa14, type: 3}
+  m_Script: {fileID: 11500000, guid: 86dd57bcaaafdf346a9e72dd03479939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedMaterial: {fileID: 0}
-  BlueMaterial: {fileID: 0}
-  YellowMaterial: {fileID: 0}
-  LetterPrefab: {fileID: 0}
-  LettersInBag: 1
 --- !u!1 &1867070356
 GameObject:
   m_ObjectHideFlags: 0
@@ -12696,6 +12712,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009804066}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2016155778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016155779}
+  m_Layer: 0
+  m_Name: MailSpawnPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2016155779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016155778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.098, y: 2.231, z: -6.434}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1223002086}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2017968194
 GameObject:
   m_ObjectHideFlags: 0
@@ -18145,60 +18192,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 083eba9291adafa4fb073e5ad6956c06, type: 3}
---- !u!1001 &5133159176077539279
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1333723988}
-    m_Modifications:
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.239
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.774
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123970, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133159174478123971, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}
-      propertyPath: m_Name
-      value: MailBag
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7be956ff83d5f8842ab9a5e51e14ad73, type: 3}

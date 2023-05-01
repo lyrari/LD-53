@@ -7,6 +7,8 @@ public class GrabbableObject : MonoBehaviour
     bool grabbed;
     Rigidbody rb;
 
+    public DepositBin.BinType MyCorrectBin;
+
     // Any other info about the object should go here - like mail stats, destination
 
     private void Awake()

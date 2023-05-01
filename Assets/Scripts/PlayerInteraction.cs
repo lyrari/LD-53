@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public ScoreTracker m_ScoreTracker;
+
     Camera MainCamera;
     public float InteractionRange = 1.5f;
     public LayerMask InteractableObjectMask;
@@ -64,6 +66,23 @@ public class PlayerInteraction : MonoBehaviour
                 if (raycastHitSuccess)
                 {
                     Debug.Log("Try to place it in something");
+                    DepositBin bin = hit.transform.GetComponent<DepositBin>();
+                    if (bin != null)
+                    {
+                        // Place in bin: Destroy it and mark success/failure
+                        bool success = bin.DepositInBin(HeldObject);
+                        if (success)
+                        {
+                            m_ScoreTracker.successes++;
+                        } else
+                        {
+                            m_ScoreTracker.failures++;
+                        }
+                        Debug.Log("Place in bin success: " + success);
+                        Destroy(HeldObject.gameObject);
+                        HeldObject = null;
+                        return;
+                    }
                 }
 
                 // Else, drop the item

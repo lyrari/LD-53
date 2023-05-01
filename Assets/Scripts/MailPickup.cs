@@ -59,8 +59,9 @@ public class MailPickup : MonoBehaviour
         if (!creepyLetterSpawned && (Time.time > tutTimeUntilCreepyLetterSpawn || (scoreTracker.successes + scoreTracker.failures >= 5)))
         {
             creepyLetterSpawned = true;
-            AkSoundEngine.PostEvent("mailFaked", this.gameObject); //evilMailAppeared
+            //AkSoundEngine.PostEvent("mailFaked", this.gameObject); //evilMailAppeared
             CreepyLetter.SetActive(true);
+            AkSoundEngine.PostEvent("evilMailAppear", this.gameObject);
         }
         
     }

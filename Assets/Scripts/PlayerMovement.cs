@@ -12,17 +12,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SoundOut());
-
-        IEnumerator SoundOut()
-        {
-            while (m_IsMoving == true)
-            {
-                AkSoundEngine.PostEvent("footStepping", this.gameObject);
-                Debug.Log("Foot Should Be Stepping");
-                yield return new WaitForSeconds(stepWait);
-            }
-        }
+        StartCoroutine(SoundTest());
     }
 
     // Update is called once per frame
@@ -36,11 +26,20 @@ public class PlayerMovement : MonoBehaviour
             m_IsMoving = true;
         }
         else m_IsMoving = false;
-        
-        
-        
 
         Vector3 move = transform.right * SideMovement + transform.forward * FrontBackMovement;
         controller.Move(move * m_MoveSpeed * Time.deltaTime);
+    }
+    void SoundFootstepping()
+    {
+        AkSoundEngine.PostEvent("footStepping", this.gameObject);
+    }
+    IEnumerator SoundTest()
+    {
+        while (m_IsMoving)
+        {
+            SoundFootstepping();
+            yield return new WaitForSeconds(stepWait);
+        }
     }
 }

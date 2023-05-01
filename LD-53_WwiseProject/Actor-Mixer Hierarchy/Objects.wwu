@@ -190,6 +190,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -295,6 +300,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="mailFooled-001" ID="{4D369478-BB85-4F60-A66F-6495D832AEE5}" ShortID="564978215">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -339,6 +351,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-003" ID="{6F16D38A-E81A-4265-B7E0-6B58E13A3E1C}" ShortID="609332822">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -361,6 +380,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-004" ID="{A0534863-71D5-403C-A06B-85652E2DC27A}" ShortID="381447156">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -383,6 +409,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-005" ID="{5BE25D60-B614-485C-B5AA-BED0161C922A}" ShortID="866204902">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -405,6 +438,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-006" ID="{036B5D1F-CA62-4E18-841B-2569E357AB92}" ShortID="665150431">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -427,6 +467,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-007" ID="{E891C859-8B44-49BF-8A89-B7EAAC0AD0D1}" ShortID="194900487">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -500,6 +547,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-010" ID="{89DD8FD8-02F3-4BFB-B263-B1C50F412EBC}" ShortID="393959772">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -522,6 +576,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-011" ID="{480EEE29-5BF1-42FA-81E9-667A8955C83C}" ShortID="279602208">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -566,6 +627,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-013" ID="{C3697614-793B-4584-A571-E019C297931C}" ShortID="942133618">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -588,6 +656,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-014" ID="{A925F7D4-C20B-4C9F-B5EB-0E6900B40B70}" ShortID="905232367">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -610,6 +685,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="mailFooled-015" ID="{81E06141-95F7-40DF-B94C-4240EA2A72A5}" ShortID="889651776">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -817,6 +899,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -827,21 +914,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="mailBurn" ID="{8F2229A3-2B97-4C32-9FAF-AA0D755BCF6D}">
+								<AudioFileSource Name="mailBurned" ID="{323706B2-43B2-473B-9163-CE0336C74E3A}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.671220941883767"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.493765485777089"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.5511752254509"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.01021496659028"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>mailBurn.wav</AudioFile>
+									<AudioFile>mailBurned.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1012681276"/>
+										<MediaID ID="956125473"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="mailBurn" ID="{8F2229A3-2B97-4C32-9FAF-AA0D755BCF6D}" Platform="Linked"/>
+								<ActiveSource Name="mailBurned" ID="{323706B2-43B2-473B-9163-CE0336C74E3A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="timeTicking" ID="{8B91135A-7E8D-4649-A05C-798AB5D93B00}" ShortID="330949357">
@@ -971,6 +1058,53 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="corruptShrine1" ID="{70200E09-9BD3-447B-B46F-52C0CA6238EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="evilMailAppear" ID="{931F4EB9-6E88-48C4-B777-BA6967CC2040}" ShortID="53008637">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8E9A6877-E705-459C-B2CC-17F1D8D24BB9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2ACAFE6-8746-4B1D-8138-BE934C488C2F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="evilMailAppear" ID="{FDE0CB53-5ABF-4484-B51C-1CF09A15D2B0}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.403839422436751"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.01043933089215"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>evilMailAppear.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="549940009"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="evilMailAppear" ID="{FDE0CB53-5ABF-4484-B51C-1CF09A15D2B0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

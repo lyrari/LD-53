@@ -56,6 +56,7 @@ public class LightManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             Flashlight.enabled = !Flashlight.enabled;
+            AkSoundEngine.PostEvent("flashLight", this.gameObject);
         }
 
 
@@ -74,6 +75,7 @@ public class LightManager : MonoBehaviour
         RoomMainLight.enabled = !LightsOut.value;
         RoomAmbientLight.enabled = !LightsOut.value;
         Flashlight.enabled = LightsOut.value;
+        AkSoundEngine.PostEvent("lightSwitch", this.gameObject);
 
         if (LightsOut.value)
         {
@@ -92,6 +94,7 @@ public class LightManager : MonoBehaviour
         float lightIntensityInitial = l.intensity;
         float lightIntensityFlicker = lightIntensityInitial / 2;
 
+        AkSoundEngine.PostEvent("lightFlicker", this.gameObject);
         l.intensity = lightIntensityFlicker;
         yield return new WaitForSeconds(0.1f);
         l.intensity = lightIntensityInitial;

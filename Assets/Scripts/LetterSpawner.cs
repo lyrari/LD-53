@@ -42,6 +42,7 @@ public class LetterSpawner : MonoBehaviour
             }
 
             letter.Init(matType, binType);
+            AkSoundEngine.PostEvent("mailMove", this.gameObject);
         }
         Destroy(this.gameObject);
     }

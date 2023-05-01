@@ -10,5 +10,6 @@ public class MailButton : MonoBehaviour
     public void ClickMailButton()
     {
         m_MailPickup.PressMailButton();
+        AkSoundEngine.PostEvent("buttonClick", this.gameObject);
     }
 }

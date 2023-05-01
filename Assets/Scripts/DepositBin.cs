@@ -26,13 +26,16 @@ public class DepositBin : MonoBehaviour
             if (MyBinType == BinType.Hell)
             {
                 // Play hell sound instead of success sound
+                AkSoundEngine.PostEvent("deliverEvil", this.gameObject);
             } else
             {
                 // Play standard success sound
+                AkSoundEngine.PostEvent("deliverCorrect", this.gameObject);
             }
         } else
         {
             // Play failure sound
+            AkSoundEngine.PostEvent("deliverFail", this.gameObject);
         }
 
         return successfulDeposit;

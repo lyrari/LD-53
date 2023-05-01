@@ -1,2 +1,9 @@
-Trash bin - Rodolfo Rubens https://assetstore.unity.com/packages/3d/props/furniture/trash-bin-96670
+Trash Bin - Rodolfo Rubens https://assetstore.unity.com/packages/3d/props/furniture/trash-bin-96670
+Ceiling - tiko479 https://opengameart.org/content/wood-modular-building-pieces
+Floor - Tim H. https://assetstore.unity.com/packages/vfx/shaders/substances/old-bloody-wood-planks-substance-64025
+Fan - Tim H. https://assetstore.unity.com/packages/3d/props/tim-s-assets-old-ceiling-fan-103789
+Bag - Solum Night https://assetstore.unity.com/packages/3d/props/exterior/low-poly-pack-environment-lite-102039
+Wall - A Dog's Life Software https://assetstore.unity.com/packages/2d/textures-materials/brick/18-high-resolution-wall-textures-12567
+Paper - jbp4444 https://opengameart.org/content/construction-paper-backgrounds
+
 

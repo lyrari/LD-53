@@ -66,10 +66,10 @@ public class MailPickup : MonoBehaviour
         
     }
 
-    // Wait 5 seconds then ring and enable button
+    // Wait 15 seconds then ring and enable button
     IEnumerator TutorialRing()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(15f);
         Debug.Log("Tutorial ring - Mail is ready!");
         buttonActive = true;
         MailButton.material = ButtonOn;

@@ -41,7 +41,10 @@ public class LetterSpawner : MonoBehaviour
                     return;
             }
 
-            letter.Init(matType, binType);
+            float StampChance = Random.Range(0, 100);
+            bool hasStamp = StampChance > 33; // 33%
+
+            letter.Init(matType, binType, hasStamp);
             AkSoundEngine.PostEvent("mailMove", this.gameObject);
         }
         Destroy(this.gameObject);

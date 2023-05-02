@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
         }
 
         if (m_GameOver.value) {
-            if (Input.anyKeyDown)
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 m_SpookyMeter.value = 0;

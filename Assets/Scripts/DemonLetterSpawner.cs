@@ -36,6 +36,12 @@ public class DemonLetterSpawner : MonoBehaviour
                    0, Random.Range(LetterSpawnRect.rect.yMin, LetterSpawnRect.rect.yMax)) + LetterSpawnRect.transform.position;
 
             GameObject letter = Instantiate(DemonLetterPrefab, position, Quaternion.identity);
+            Letter letterScript = letter.GetComponent<Letter>();
+
+            float StampChance = Random.Range(0, 100);
+            bool hasStamp = StampChance > 33; // 33%
+            letterScript.SetupStamp(hasStamp, DepositBin.BinType.Hell);
+
             AkSoundEngine.PostEvent("evilMailAppear", letter);
 
             SetNextDemonSpawn();

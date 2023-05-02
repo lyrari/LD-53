@@ -106,7 +106,7 @@ public class MailPickup : MonoBehaviour
         AkSoundEngine.PostEvent("deliverFail", this.gameObject);
 
         scoreTracker.failures++;
-        nextMailSpawn = Time.time + (mailMinDelay / 2);
+        nextMailSpawn = Time.time + (5f);
 
         // TODO: Play failure sound
     }

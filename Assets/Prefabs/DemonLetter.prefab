@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f2423d2baa9afe3488aca830a3331bef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88d7a045dc3218445a7d4a8f686a2b29, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -377,9 +377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stamp: {fileID: 6796113271536182724}
   StampImagesNormal:
-  - {fileID: 21300000, guid: f2423d2baa9afe3488aca830a3331bef, type: 3}
-  - {fileID: 21300000, guid: b3dc9e23b86c1a5408cceeb105d9a73f, type: 3}
-  - {fileID: 21300000, guid: acd9ae98f7580c542b3986578e0deb31, type: 3}
+  - {fileID: 21300000, guid: 88d7a045dc3218445a7d4a8f686a2b29, type: 3}
+  - {fileID: 21300000, guid: be6784d26609f6c46b801aa6e2b8cc56, type: 3}
+  - {fileID: 21300000, guid: 955acfecb75350e408702afc209ff938, type: 3}
 --- !u!1 &7574763764323008683
 GameObject:
   m_ObjectHideFlags: 0

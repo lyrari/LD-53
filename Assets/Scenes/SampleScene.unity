@@ -7903,7 +7903,7 @@ MonoBehaviour:
   MainCamera: {fileID: 963194227}
   playerBody: {fileID: 948612402}
   m_ClampYDegrees: 75
-  m_MouseSensitivity: 500
+  m_MouseSensitivity: 200
   DefaultFOV: 60
   ZoomedFOV: 30
 --- !u!1 &963256914

@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stamp: {fileID: 1116767905936624686}
   StampImagesNormal:
-  - {fileID: 21300000, guid: b3dc9e23b86c1a5408cceeb105d9a73f, type: 3}
+  - {fileID: 21300000, guid: 955acfecb75350e408702afc209ff938, type: 3}
 --- !u!1 &7574763764323008683
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b3dc9e23b86c1a5408cceeb105d9a73f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 955acfecb75350e408702afc209ff938, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

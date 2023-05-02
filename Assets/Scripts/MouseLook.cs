@@ -8,7 +8,7 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
 
     public float m_ClampYDegrees = 75f;
-    public float m_MouseSensitivity = 500f;
+    public float m_MouseSensitivity = 100f;
 
     public float DefaultFOV = 60f;
     public float ZoomedFOV = 30f;
